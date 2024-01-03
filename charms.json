@@ -13,5 +13,10 @@
     "github_repository": "canonical/mysql-k8s-operator",
     "ref": "fix-deps",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/mysql-router-operator",
+    "ref": "with-hashes-without-jinja",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
