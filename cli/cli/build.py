@@ -117,7 +117,7 @@ def main():
                 base, charm_.directory / "charmcraft.yaml"
             ):
                 continue
-            # Check for charmcraft pack wrapper (tox `pack-wrapper` environment)
+            # Check for charmcraft pack wrapper (tox `build-wrapper` environment)
             tox_environments = subprocess.run(
                 ["tox", "list", "--no-desc"],
                 capture_output=True,
@@ -125,9 +125,9 @@ def main():
                 check=True,
                 encoding="utf-8",
             ).stdout.split("\n")
-            if "pack-wrapper" in tox_environments:
+            if "build-wrapper" in tox_environments:
                 subprocess.run(
-                    ["tox", "run", "-e", "pack-wrapper"],
+                    ["tox", "run", "-e", "build-wrapper"],
                     cwd=charm_.directory,
                     check=True,
                 )
