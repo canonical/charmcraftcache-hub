@@ -18,5 +18,10 @@
     "github_repository": "canonical/mysql-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/pgbouncer-k8s-operator",
+    "ref": "release-libs",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
