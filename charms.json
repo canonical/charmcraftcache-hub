@@ -38,5 +38,10 @@
     "github_repository": "canonical/postgresql-test-app",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/opensearch-operator",
+    "ref": "dpe-workflow-part2",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
