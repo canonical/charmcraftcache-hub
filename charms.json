@@ -41,7 +41,7 @@
   },
   {
     "github_repository": "canonical/opensearch-operator",
-    "ref": "dpe-workflow-part2",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
