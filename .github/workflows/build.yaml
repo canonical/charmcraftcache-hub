@@ -45,10 +45,6 @@ jobs:
           python3 -m pip install pipx
           python3 -m pipx ensurepath
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
-      # TODO: remove temporary workaround for postgresql charms on arm64
-      - name: (GitHub-hosted ARM runner) Install libpq-dev
-        if: ${{ matrix.runner.name == 'ARM64' }}
-        run: sudo apt-get install libpq-dev -y
       - name: Install pyenv
         run: |
           sudo apt-get update
