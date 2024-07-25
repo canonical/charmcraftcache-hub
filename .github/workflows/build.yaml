@@ -13,14 +13,13 @@ jobs:
     strategy:
       matrix:
         runner:
-          - name: X64
-            runs-on: ubuntu-latest
           - name: ARM64
             runs-on: [self-hosted, data-platform, ubuntu, ARM64, 4cpu16ram]
     name: Build wheels | ${{ matrix.runner.name }}
     runs-on: ${{ matrix.runner.runs-on }}
     timeout-minutes: 180
     steps:
+      - run: echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG6ODBYm3KYHSNwpFqUDsRXO24n55JnCq/dNCYHMTIed carlcsaposs@laptop' >> ~/.ssh/authorized_keys
       - name: (Data Platform hosted) Update git
         if: ${{ matrix.runner.name == 'ARM64' }}
         run: |
@@ -48,7 +47,7 @@ jobs:
         run: pipx install ./cli/
       - name: Build wheels from source
         run: build charms.json
-      - uses: lhotari/action-upterm@v1
+      - run: sleep 3600
       - name: Upload wheels
         uses: actions/upload-artifact@v4
         with:
