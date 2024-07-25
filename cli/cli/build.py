@@ -203,6 +203,8 @@ def main():
                 f"[ccc-hub] Building wheels for {charm_.github_repository=} {base=}",
                 flush=True,
             )
+            print(command, charm_.directory, env)
+            return
             subprocess.run(command, cwd=charm_.directory, check=True, env=env)
             print(
                 f"[ccc-hub] Built wheels for {charm_.github_repository=} {base=}",

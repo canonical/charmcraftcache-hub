@@ -3,7 +3,7 @@ name: Build & release wheels
 on:
   push:
     branches:
-      - main
+      - debug
   schedule:
     - cron: '53 23 * * *'  # Daily at 23:53 UTC
   workflow_dispatch:
@@ -48,35 +48,10 @@ jobs:
         run: pipx install ./cli/
       - name: Build wheels from source
         run: build charms.json
+      - uses: lhotari/action-upterm@v1
       - name: Upload wheels
         uses: actions/upload-artifact@v4
         with:
           name: wheels-${{ matrix.runner.name }}
           path: ~/charmcraftcache-hub-ci/release/
           if-no-files-found: error
-
-  release:
-    name: Release wheels
-    needs:
-      - build
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Install CLI
-        run: pipx install ./cli/
-      - name: Create directory
-        run: mkdir ~/release/
-      - name: Download wheels
-        uses: actions/download-artifact@v4
-        with:
-          path: ~/release/
-          pattern: wheels-*
-          merge-multiple: true
-      - name: Create GitHub release
-        run: create-release
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    permissions:
-      contents: write  # Needed to create release
