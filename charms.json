@@ -78,5 +78,10 @@
     "github_repository": "canonical/mongodb-operator",
     "ref": "6/edge",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/mongodb-k8s-operator",
+    "ref": "6/edge",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
