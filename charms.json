@@ -93,5 +93,10 @@
     "github_repository": "canonical/kfp-operators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-api"
+  },
+  {
+    "github_repository": "canonical/kfp-operators",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "charms/kfp-metadata-writer"
   }
 ]
