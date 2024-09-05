@@ -103,5 +103,10 @@
     "github_repository": "canonical/kfp-operators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-persistence"
+  },
+  {
+    "github_repository": "canonical/kfp-operators",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "charms/kfp-ui"
   }
 ]
