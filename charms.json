@@ -41,7 +41,7 @@
   },
   {
     "github_repository": "canonical/opensearch-operator",
-    "ref": "main",
+    "ref": "2/edge",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "github_repository": "canonical/opensearch-dashboards-operator",
-    "ref": "main",
+    "ref": "2/edge",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
@@ -136,6 +136,11 @@
   },
   {
     "github_repository": "canonical/namespace-node-affinity-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/opensearch-benchmark-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   }
