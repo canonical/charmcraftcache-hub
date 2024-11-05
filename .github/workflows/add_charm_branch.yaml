@@ -10,9 +10,8 @@ jobs:
     name: Add charm branch to charms.json
     if: ${{ contains(github.event.issue.labels.*.name, 'add-charm') }}
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - name: Upgrade pip
-        run: pip install --upgrade pip
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install CLI

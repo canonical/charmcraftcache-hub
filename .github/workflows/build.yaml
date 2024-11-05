@@ -9,75 +9,55 @@ on:
   workflow_dispatch:
 
 jobs:
+  collect-charms:
+    name: Collect charms
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install CLI
+        run: pipx install ./cli/
+      - name: Collect charms to build from charms.json
+        id: collect
+        run: collect-charms
+    outputs:
+      charms: ${{ steps.collect.outputs.charms }}
+
   build:
     strategy:
       matrix:
-        runner:
-          - name: X64
-            runs-on: ubuntu-22.04
-          - name: ARM64
-            runs-on: [self-hosted, data-platform, ubuntu, ARM64, 4cpu16ram]
-    name: Build wheels | ${{ matrix.runner.name }}
-    runs-on: ${{ matrix.runner.runs-on }}
-    timeout-minutes: 180
-    steps:
-      - name: (Data Platform hosted) Update git
-        if: ${{ matrix.runner.name == 'ARM64' }}
-        run: |
-          sudo add-apt-repository ppa:git-core/ppa
-          sudo apt-get update
-          sudo apt-get install git -y
-      - name: Install pyenv
-        run: |
-          sudo apt-get update
-          sudo apt-get install build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev -y
-          curl https://pyenv.run | bash
-      - name: Install rust
-        # Need new version of Rust compiler to build rpds-py>=0.19.0
-        run: |
-          sudo snap install rustup --classic
-          echo "/snap/bin" >> "$GITHUB_PATH"
-          rustup default stable
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up environment
-        run: |
-          pipx install poetry
-          pipx inject poetry poetry-plugin-export
-          # TODO: Remove after https://github.com/python-poetry/poetry/pull/5980 is closed
-          poetry config warnings.export false
-      - name: Install CLI
-        run: pipx install ./cli/
-      - name: Build wheels from source
-        run: build charms.json
-      - name: Upload wheels
-        uses: actions/upload-artifact@v4
-        with:
-          name: wheels-${{ matrix.runner.name }}
-          path: ~/charmcraftcache-hub-ci/release/
-          if-no-files-found: error
+        charm: ${{ fromJSON(needs.collect-charms.outputs.charms) }}
+    name: ${{ matrix.charm.job_name }}
+    needs:
+      - collect-charms
+    uses: ./.github/workflows/build_charm.yaml
+    with:
+      github_repository: ${{ matrix.charm.github_repository }}
+      ref: ${{ matrix.charm.ref }}
+      relative_path_to_charmcraft_yaml: ${{ matrix.charm.relative_path_to_charmcraft_yaml }}
+      charm_index: ${{ matrix.charm.charm_index }}
 
   release:
     name: Release wheels
     needs:
       - build
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install CLI
         run: pipx install ./cli/
       - name: Create directory
-        run: mkdir ~/release/
+        run: mkdir -p ~/charmcraftcache-hub-ci/bases/
       - name: Download wheels
         uses: actions/download-artifact@v4
         with:
-          path: ~/release/
-          pattern: wheels-*
-          merge-multiple: true
+          path: ~/charmcraftcache-hub-ci/bases/
+          pattern: charm-*
       - name: Create GitHub release
-        run: create-release
+        run: release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     permissions:

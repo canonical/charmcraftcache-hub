@@ -83,7 +83,7 @@ main
         if not match:
             raise IssueParsingError("@carlcsaposs-canonical Error parsing issue body")
         organization = match.group("organization")
-        charm_branch = charm.Charm(
+        charm_branch = charm.CharmRef(
             github_repository=f'{organization}/{match.group("repo_name")}',
             ref=match.group("ref"),
             relative_path_to_charmcraft_yaml=match.group("path"),
@@ -92,22 +92,19 @@ main
         allowed_github_orgs = ("canonical", "juju", "charmed-kubernetes")
         if organization not in allowed_github_orgs:
             raise IssueParsingError(
-                "To protect against arbitrary code execution, charmcraftcache-hub is only available for "
-                f'these GitHub organizations: {", ".join(allowed_github_orgs)}. '
+                "To protect against arbitrary code execution, charmcraftcache-hub is only "
+                f'available for these GitHub organizations: {", ".join(allowed_github_orgs)}. '
                 "More info: https://github.com/canonical/charmcraftcache/issues/2"
             )
         # Check that repository exists
         try:
-            subprocess.run(
-                ["gh", "repo", "view", charm_branch.github_repository], check=True
-            )
+            subprocess.run(["gh", "repo", "view", charm_branch.github_repository], check=True)
         except subprocess.CalledProcessError:
             raise IssueParsingError("Repository not found. @carlcsaposs-canonical")
         # Validate ref
         try:
             subprocess.run(
-                ["git", "check-ref-format", "--allow-onelevel", charm_branch.ref],
-                check=True,
+                ["git", "check-ref-format", "--allow-onelevel", charm_branch.ref], check=True
             )
         except subprocess.CalledProcessError:
             raise IssueParsingError("Invalid git ref. @carlcsaposs-canonical")
@@ -115,20 +112,31 @@ main
         path = pathlib.Path(charm_branch.relative_path_to_charmcraft_yaml)
         if not path.resolve().is_relative_to(pathlib.Path(".").resolve()):
             raise IssueParsingError("Invalid path. @carlcsaposs-canonical")
-        with open("charms.json", "r") as file:
+        if "ccchub" in (
+            charm_branch.github_repository,
+            charm_branch.ref,
+            charm_branch.relative_path_to_charmcraft_yaml,
+        ):
+            raise IssueParsingError(
+                "'ccchub' string is not allowed in repository name, git ref, or relative path to "
+                "charmcraft.yaml. @carlcsaposs-canonical"
+            )
+        with open("charms.json") as file:
             charms = json.load(file)
         charm_ = dataclasses.asdict(charm_branch)
         if charm_ in charms:
-            raise IssueParsingError(
-                "Git ref already exists in charms.json. @carlcsaposs-canonical"
-            )
+            raise IssueParsingError("Git ref already exists in charms.json. @carlcsaposs-canonical")
     except IssueParsingError as exception:
         output = f"success={json.dumps(False)}\nerror={exception.message}"
     else:
         charms.append(charm_)
         with open("charms.json", "w") as file:
             json.dump(charms, file, indent=2)
-        output = f"success={json.dumps(True)}\ntitle=Add {charm_branch.github_repository}@{charm_branch.ref} at path {charm_branch.relative_path_to_charmcraft_yaml}"
+        output = (
+            f"success={json.dumps(True)}\ntitle=Add "
+            f"{charm_branch.github_repository}@{charm_branch.ref} at path "
+            f"{charm_branch.relative_path_to_charmcraft_yaml}"
+        )
     print(output)
     with open(os.environ["GITHUB_OUTPUT"], "a") as file:
         file.write(output)

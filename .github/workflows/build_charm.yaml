@@ -1,0 +1,81 @@
+on:
+  workflow_call:
+    inputs:
+      github_repository:
+        description: GitHub repository (e.g. "canonical/mysql-router-k8s-operator")
+        required: true
+        type: string
+      ref:
+        description: Git ref (branch, tag, commit sha, etc.)
+        required: true
+        type: string
+      relative_path_to_charmcraft_yaml:
+        description: Relative path from repository root directory to charm directory
+        required: true
+        type: string
+      charm_index:
+        description: Index of charm in charms.json
+        required: true
+        type: number
+
+jobs:
+  collect-bases:
+    name: Collect bases
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install CLI
+        run: pipx install ./cli/
+      - name: Collect charm bases to build from charmcraft.yaml
+        id: collect
+        run: collect-bases --github-repository='${{ inputs.github_repository }}' --ref='${{ inputs.ref }}' --relative-path-to-charmcraft-yaml='${{ inputs.relative_path_to_charmcraft_yaml }}'
+    outputs:
+      bases: ${{ steps.collect.outputs.bases }}
+
+  build:
+    strategy:
+      matrix:
+        base: ${{ fromJSON(needs.collect-bases.outputs.bases) }}
+    name: 'Build charm | ${{ matrix.base.name }}'
+    needs:
+      - collect-bases
+    runs-on: ${{ matrix.base.runner }}
+    timeout-minutes: 120
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: ccchub-repo/
+      - name: Install CLI
+        run: pipx install ./ccchub-repo/cli/
+      - name: Set up environment
+        run: |
+          sudo adduser "$USER" lxd
+          # `newgrp` does not work in GitHub Actions; use `sg` instead
+          sg lxd -c "lxd waitready"
+          sg lxd -c "lxd init --auto"
+          # Workaround for Docker & LXD on same machine
+          sudo iptables -F FORWARD
+          sudo iptables -P FORWARD ACCEPT
+
+          # 2.x/stable is workaround for https://github.com/canonical/charmcraft/issues/1983
+          sudo snap install charmcraft --classic --channel 2.x/stable
+      - run: snap list
+      - name: Build charm
+        run: sg lxd -c "build --github-repository='${{ inputs.github_repository }}' --ref='${{ inputs.ref }}' --relative-path-to-charmcraft-yaml='${{ inputs.relative_path_to_charmcraft_yaml }}' --base-index='${{ matrix.base.base_index }}'"
+      - name: Upload wheels in charmcraft cache directory
+        uses: actions/upload-artifact@v4
+        with:
+          name: charm-${{ inputs.charm_index }}-base-${{ matrix.base.name_in_artifact }}
+          # Example contents of ~/charmcraftcache-hub-ci/charmcraft-cache/:
+          # - charmcraft-buildd-base-v7/BuilddBaseAlias.JAMMY/pip/
+          #     - http/
+          #     - http-v2/
+          #     - selfcheck/
+          #     - wheels/
+          # - charmcraft.lock
+          # We only care about wheels/ directory in pip's cache
+          # (https://pip.pypa.io/en/stable/topics/caching/)
+          path: ~/charmcraftcache-hub-ci/charmcraft-cache/*/*/pip/wheels/

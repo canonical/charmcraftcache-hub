@@ -6,21 +6,24 @@ authors = ["Carl Csaposs <carl.csaposs@canonical.com>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
+collect-charms = "cli.collect_charms:main"
+collect-bases = "cli.collect_bases:main"
 build = "cli.build:main"
-create-release = "cli.create_release:main"
+release = "cli.release:main"
 add-charm = "cli.add_charm_branch:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pip = "^23.3.1"
 pyyaml = "^6.0.1"
 requests = "^2.32.3"
 uritemplate = "^4.1.1"
 
-[tool.poetry.group.format.dependencies]
-black = "^23.10.1"
-isort = "^5.12.0"
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+extend-select = ["I", "UP"]

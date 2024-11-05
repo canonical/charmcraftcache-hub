@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Adding your charm branch enables charmcraftcache-hub to build wheels for your Python dependencies—so that you can have faster builds with charmcraftcache
+        Adding your charm branch enables charmcraftcache-hub to build wheels for your Python dependencies—which enables you to use charmcraftcache for faster builds
   - type: input
     id: repo
     attributes:
