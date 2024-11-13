@@ -160,11 +160,6 @@
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
-    "github_repository": "canonical/data-integrator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
     "github_repository": "canonical/kafka-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
