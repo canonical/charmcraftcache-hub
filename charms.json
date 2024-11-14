@@ -208,5 +208,10 @@
     "github_repository": "canonical/s3-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/application-charm"
+  },
+  {
+    "github_repository": "canonical/spark-history-server-k8s-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
