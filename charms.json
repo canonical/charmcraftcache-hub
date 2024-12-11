@@ -238,10 +238,5 @@
     "github_repository": "canonical/object-storage-integrators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/test-charm-azure"
-  },
-  {
-    "github_repository": "canonical/wazuh-dashboard-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
   }
 ]
