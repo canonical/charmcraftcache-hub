@@ -243,5 +243,10 @@
     "github_repository": "canonical/wazuh-dashboard-operator",
     "ref": "migrate-build",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/wazuh-dashboard-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "tests/integration/application-charm"
   }
 ]
