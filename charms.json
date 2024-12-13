@@ -251,12 +251,12 @@
   },
   {
     "github_repository": "canonical/wazuh-indexer-operator",
-    "ref": "migrate-build",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/relations/opensearch_provider/application-charm"
   },
   {
     "github_repository": "canonical/wazuh-indexer-operator",
-    "ref": "migrate-build",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   }
 ]
