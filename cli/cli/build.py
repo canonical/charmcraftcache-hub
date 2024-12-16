@@ -7,14 +7,14 @@ from . import charm, checkout
 
 
 def main():
-    """Build charm base"""
+    """Build charm platform"""
     parser = argparse.ArgumentParser()
     parser.add_argument("--github-repository", required=True)
     parser.add_argument("--ref", required=True)
     parser.add_argument("--relative-path-to-charmcraft-yaml", required=True)
-    parser.add_argument("--base-index", required=True)
+    parser.add_argument("--platform", required=True)
     args = vars(parser.parse_args())
-    base_index = args.pop("base_index")
+    platform = args.pop("platform")
     charm_ref = charm.CharmRef(**args)
     charm_dir = checkout.checkout(charm_ref, sparse=False)
     # Cache directory used by charmcraft; unrelated to charmcraftcache CLI
@@ -25,12 +25,8 @@ def main():
     charmcraft_cache_directory.mkdir(parents=True)
     env = os.environ
     env["CRAFT_SHARED_CACHE"] = str(charmcraft_cache_directory)
-    requirements = pathlib.Path(charm_dir, "requirements.txt")
-    if not requirements.exists():
-        # Workaround for https://github.com/canonical/charmcraft/issues/1389 on charmcraft 2
-        requirements.touch()
     subprocess.run(
-        ["charmcraft", "pack", "-v", "--bases-index", base_index],
+        ["charmcraft", "pack", "-v", "--platform", platform],
         cwd=charm_dir,
         check=True,
         env=env,

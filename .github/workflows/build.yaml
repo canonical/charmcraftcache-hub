@@ -50,11 +50,11 @@ jobs:
       - name: Install CLI
         run: pipx install ./cli/
       - name: Create directory
-        run: mkdir -p ~/charmcraftcache-hub-ci/bases/
+        run: mkdir -p ~/charmcraftcache-hub-ci/platforms/
       - name: Download wheels
         uses: actions/download-artifact@v4
         with:
-          path: ~/charmcraftcache-hub-ci/bases/
+          path: ~/charmcraftcache-hub-ci/platforms/
           pattern: charm-*
       - name: Create GitHub release
         run: release

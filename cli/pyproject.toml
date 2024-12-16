@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.scripts]
 collect-charms = "cli.collect_charms:main"
-collect-bases = "cli.collect_bases:main"
+collect-platforms = "cli.collect_platforms:main"
 build = "cli.build:main"
 release = "cli.release:main"
 add-charm = "cli.add_charm_branch:main"
@@ -17,6 +17,7 @@ python = ">=3.10"  # TODO: bump to >=3.12 when arm runners move to 24.04. enum.S
 pyyaml = "^6.0.1"
 requests = "^2.32.3"
 uritemplate = "^4.1.1"
+charmcraftcache = ">=0.6.0"
 
 [build-system]
 requires = ["poetry-core"]

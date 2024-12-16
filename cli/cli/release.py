@@ -90,59 +90,60 @@ def main():
         charm.CharmRef(**charm_) for charm_ in json.loads(pathlib.Path("charms.json").read_text())
     ]
 
-    # Combine cache for multiple refs on the same charm & same base
+    # Combine cache for multiple refs on the same charm & same platform
     # `_Charm`: list of indexes in charms.json
     charm_indexes: dict[_Charm, list[int]] = {}
     for index, charm_ref in enumerate(charm_refs):
         charm_indexes.setdefault(_Charm.from_charm_ref(charm_ref), []).append(index)
-    bases = pathlib.Path("~/charmcraftcache-hub-ci/bases/").expanduser()
-    combined_bases = pathlib.Path("~/charmcraftcache-hub-ci/combined_bases/").expanduser()
+    platforms = pathlib.Path("~/charmcraftcache-hub-ci/platforms/").expanduser()
+    combined_platforms = pathlib.Path("~/charmcraftcache-hub-ci/combined_platforms/").expanduser()
     for charm_, indexes in charm_indexes.items():
         # Lower index (earlier in charms.json list) should override higher index
         # `shutil.copytree` with `dirs_exist_ok=True` provides this behavior if we copy higher
         # indexes before lower indexes
         for index in reversed(indexes):
-            # Example `base`: "charm-0-base-ubuntu@22.04_ccchubbase_amd64"
-            for base in bases.glob(f"charm-{index}-*"):
+            # Example `platform`: "charm-0-platform-ubuntu@22.04_ccchubplatform_amd64"
+            for platform in platforms.glob(f"charm-{index}-*"):
                 # Remove charmcraft base directory (e.g. "charmcraft-buildd-base-v7") when copying
-                base_subdirectories = list(base.iterdir())
-                assert len(base_subdirectories) == 1
-                # Example `base_subdirectory.name`: "charmcraft-buildd-base-v7"
-                base_subdirectory = base_subdirectories[0]
+                platform_subdirectories = list(platform.iterdir())
+                assert len(platform_subdirectories) == 1
+                # Example `platform_subdirectory.name`: "charmcraft-buildd-base-v7"
+                platform_subdirectory = platform_subdirectories[0]
                 shutil.copytree(
-                    base_subdirectory,
-                    combined_bases / base.name.replace(f"charm-{index}-", f"charm-{min(indexes)}-"),
+                    platform_subdirectory,
+                    combined_platforms
+                    / platform.name.replace(f"charm-{index}-", f"charm-{min(indexes)}-"),
                     dirs_exist_ok=True,
                 )
-                shutil.rmtree(base)
+                shutil.rmtree(platform)
         print(f"[ccc-hub] Merged {indexes=} for {charm_=}", flush=True)
     # Check directory is empty
-    bases.rmdir()
-    print("[ccc-hub] Merged bases", flush=True)
+    platforms.rmdir()
+    print("[ccc-hub] Merged platforms", flush=True)
 
     release_archives = pathlib.Path("~/charmcraftcache-hub-ci/release_archives/").expanduser()
-    for base in combined_bases.iterdir():
-        base: pathlib.Path
-        # Example: "charm-0-base-ubuntu@22.04_ccchubbase_amd64"
-        artifact_name = base.name
-        first, charm_index, third, base_name = artifact_name.split("-")
-        assert first == "charm" and third == "base"
+    for platform in combined_platforms.iterdir():
+        platform: pathlib.Path
+        # Example: "charm-0-platform-ubuntu@22.04_ccchubplatform_amd64"
+        artifact_name = platform.name
+        first, charm_index, third, platform_name = artifact_name.split("-")
+        assert first == "charm" and third == "platform"
         charm_index = int(charm_index)
         charm_ref = charm_refs[charm_index]
-        archive_name = f"{charm_ref.github_repository}_ccchub1_{charm_ref.relative_path_to_charmcraft_yaml}_ccchub2_{base_name}"
+        archive_name = f"{charm_ref.github_repository}_ccchub1_{charm_ref.relative_path_to_charmcraft_yaml}_ccchub2_{platform_name}"
         archive_name = archive_name.replace("/", "_")
         archive_path_without_extension = release_archives / archive_name
         expected_archive_path = release_archives / f"{archive_name}.tar.gz"
         assert not expected_archive_path.exists()
         created_archive_path = shutil.make_archive(
-            base_name=str(archive_path_without_extension), format="gztar", root_dir=base
+            base_name=str(archive_path_without_extension), format="gztar", root_dir=platform
         )
         created_archive_path = pathlib.Path(created_archive_path)
         assert created_archive_path == expected_archive_path
         print(f"[ccc-hub] Created archive {created_archive_path.name}", flush=True)
     print("[ccc-hub] Created all archives", flush=True)
 
-    release_name = f"build-{int(time.time())}-v4"
+    release_name = f"build-{int(time.time())}-v5"
     # Create git tag
     subprocess.run(["git", "tag", release_name], check=True)
     subprocess.run(["git", "push", "origin", release_name], check=True)
