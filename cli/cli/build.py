@@ -26,7 +26,7 @@ def main():
     env = os.environ
     env["CRAFT_SHARED_CACHE"] = str(charmcraft_cache_directory)
     subprocess.run(
-        ["charmcraftst124", "pack", "-v", "--platform", platform],
+        ["charmcraft", "pack", "-v", "--platform", platform],
         cwd=charm_dir,
         check=True,
         env=env,

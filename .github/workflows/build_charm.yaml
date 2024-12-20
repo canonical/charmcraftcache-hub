@@ -62,7 +62,6 @@ jobs:
 
           # TODO: update channel
           sudo snap install charmcraft --classic --channel 3.x/edge
-          pipx install charmcraftst124
       - run: snap list
       - name: Build charm
         run: sg lxd -c "build --github-repository='${{ inputs.github_repository }}' --ref='${{ inputs.ref }}' --relative-path-to-charmcraft-yaml='${{ inputs.relative_path_to_charmcraft_yaml }}' --platform='${{ matrix.platform.name }}'"
