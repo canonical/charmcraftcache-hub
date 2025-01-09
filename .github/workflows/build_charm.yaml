@@ -53,9 +53,9 @@ jobs:
       - name: Set up environment
         run: |
           sudo adduser "$USER" lxd
-          # `newgrp` does not work in GitHub Actions; use `sg` instead
-          sg lxd -c "lxd waitready"
-          sg lxd -c "lxd init --auto"
+          # `newgrp` does not work in GitHub Actions; use `sudo --user` instead
+          sudo --user "$USER" --preserve-env --preserve-env=PATH -- env -- lxd waitready
+          sudo --user "$USER" --preserve-env --preserve-env=PATH -- env -- lxd init --auto
           # Workaround for Docker & LXD on same machine
           sudo iptables -F FORWARD
           sudo iptables -P FORWARD ACCEPT
@@ -64,7 +64,7 @@ jobs:
           sudo snap install charmcraft --classic --channel 2.x/stable
       - run: snap list
       - name: Build charm
-        run: sg lxd -c "build --github-repository='${{ inputs.github_repository }}' --ref='${{ inputs.ref }}' --relative-path-to-charmcraft-yaml='${{ inputs.relative_path_to_charmcraft_yaml }}' --base-index='${{ matrix.base.base_index }}'"
+        run: sudo --user "$USER" --preserve-env --preserve-env=PATH -- env -- build --github-repository='${{ inputs.github_repository }}' --ref='${{ inputs.ref }}' --relative-path-to-charmcraft-yaml='${{ inputs.relative_path_to_charmcraft_yaml }}' --base-index='${{ matrix.base.base_index }}'
       - name: Upload wheels in charmcraft cache directory
         uses: actions/upload-artifact@v4
         with:

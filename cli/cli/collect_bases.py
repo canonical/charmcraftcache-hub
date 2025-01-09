@@ -10,7 +10,7 @@ import yaml
 from . import charm, checkout
 
 
-class _Architecture(str, enum.Enum):
+class _Architecture(enum.StrEnum):
     X64 = "amd64"
     ARM64 = "arm64"
 
