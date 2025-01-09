@@ -45,11 +45,6 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/data-integrator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
     "github_repository": "canonical/s3-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
