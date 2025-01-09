@@ -13,7 +13,7 @@ release = "cli.release:main"
 add-charm = "cli.add_charm_branch:main"
 
 [tool.poetry.dependencies]
-python = ">=3.12"
+python = ">=3.10"  # TODO: bump to >=3.12 when arm runners move to 24.04. enum.StrEnum requires >=3.11
 pyyaml = "^6.0.1"
 requests = "^2.32.3"
 uritemplate = "^4.1.1"
