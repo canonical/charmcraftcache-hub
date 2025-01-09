@@ -170,6 +170,21 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
+    "github_repository": "canonical/opensearch-operator",
+    "ref": "2/edge",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/opensearch-operator",
+    "ref": "2/edge",
+    "relative_path_to_charmcraft_yaml": "tests/integration/relations/opensearch_provider/application-charm"
+  },
+  {
+    "github_repository": "canonical/opensearch-dashboards-operator",
+    "ref": "2/edge",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
     "github_repository": "canonical/opensearch-dashboards-operator",
     "ref": "2/edge",
     "relative_path_to_charmcraft_yaml": "tests/integration/application-charm"
