@@ -81,12 +81,12 @@
   },
   {
     "github_repository": "canonical/karapace-k8s-operator",
-    "ref": "charmcraft-3-migration",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/karapace-k8s-operator",
-    "ref": "charmcraft-3-migration",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
@@ -106,22 +106,22 @@
   },
   {
     "github_repository": "canonical/spark-integration-hub-k8s-operator",
-    "ref": "charmcraft-3-migration",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/spark-integration-hub-k8s-operator",
-    "ref": "charmcraft-3-migration",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
     "github_repository": "canonical/object-storage-integrators",
-    "ref": "charmcraft-3-migration",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/object-storage-integrators",
-    "ref": "charmcraft-3-migration",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/test-charm-azure"
   },
   {
