@@ -1,267 +1,177 @@
 [
   {
-    "github_repository": "canonical/mysql-k8s-operator",
-    "ref": "main",
+    "github_repository": "canonical/mysql-router-k8s-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/mysql-operator",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/pgbouncer-k8s-operator",
-    "ref": "main",
+    "github_repository": "canonical/mysql-k8s-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/postgresql-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/postgresql-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/postgresql-test-app",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/pgbouncer-operator",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-api"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-metadata-writer"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-persistence"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-schedwf"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-viewer"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-viz"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-profile-controller"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-ui"
-  },
-  {
-    "github_repository": "canonical/envoy-operator",
-    "ref": "main",
+    "github_repository": "canonical/pgbouncer-k8s-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/namespace-node-affinity-operator",
-    "ref": "main",
+    "github_repository": "canonical/postgresql-test-app",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/charmed-etcd-operator",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/kafka-operator",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/kafka-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/zookeeper-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/zookeeper-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/zookeeper-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
     "github_repository": "canonical/kafka-operator",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
     "github_repository": "canonical/kafka-k8s-operator",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/kafka-k8s-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
     "github_repository": "canonical/zookeeper-operator",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+    {
+    "github_repository": "canonical/zookeeper-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
-    "github_repository": "canonical/kafka-bundle",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/bundle/app-charm"
+    "github_repository": "canonical/zookeeper-k8s-operator",
+    "ref": "charmcraft-3-migration",
+    "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/kafka-test-app",
-    "ref": "main",
+    "github_repository": "canonical/zookeeper-k8s-operator",
+    "ref": "charmcraft-3-migration",
+    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
+  },
+  {
+    "github_repository": "canonical/karapace-k8s-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/karapace-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/karapace-k8s-operator",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
     "github_repository": "canonical/karapace-operator",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/karapace-operator",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
-    "github_repository": "canonical/s3-integrator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/application-charm"
   },
   {
     "github_repository": "canonical/spark-history-server-k8s-operator",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/opensearch-operator",
-    "ref": "2/edge",
+    "github_repository": "canonical/spark-integration-hub-k8s-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/opensearch-operator",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/relations/opensearch_provider/application-charm"
-  },
-  {
-    "github_repository": "canonical/opensearch-dashboards-operator",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/opensearch-dashboards-operator",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/application-charm"
-  },
-  {
-    "github_repository": "canonical/kyuubi-k8s-operator",
-    "ref": "main",
+    "github_repository": "canonical/spark-integration-hub-k8s-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
     "github_repository": "canonical/object-storage-integrators",
-    "ref": "main",
+    "ref": "charmcraft-3-migration",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/object-storage-integrators",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "tests/integration/test-charm-azure"
   },
   {
-    "github_repository": "canonical/wazuh-dashboard-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/application-charm"
-  },
-  {
-    "github_repository": "canonical/wazuh-indexer-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/relations/opensearch_provider/application-charm"
-  },
-  {
-    "github_repository": "canonical/spark-integration-hub-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/spark-integration-hub-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
-    "github_repository": "canonical/object-storage-integrators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mysql-router-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mysql-router-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mongodb-k8s-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mongos-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mongos-k8s-operator",
-    "ref": "6/edge",
+    "github_repository": "canonical/mongodb-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/mongodb-operator",
-    "ref": "6/edge",
+    "ref": "charmcraft-3-migration",
+    "relative_path_to_charmcraft_yaml": "tests/integration/sharding_tests/application"
+  },
+  {
+    "github_repository": "canonical/mongodb-operator",
+    "ref": "charmcraft-3-migration",
+    "relative_path_to_charmcraft_yaml": "tests/integration/relation_tests/new_relations/application-charm"
+  },
+  {
+    "github_repository": "canonical/mongodb-k8s-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/charm-rolling-ops",
-    "ref": "main",
+    "github_repository": "canonical/mongodb-k8s-operator",
+    "ref": "charmcraft-3-migration",
+    "relative_path_to_charmcraft_yaml": "tests/integration/ha_tests/application_charm"
+  },
+  {
+    "github_repository": "canonical/mongodb-k8s-operator",
+    "ref": "charmcraft-3-migration",
+    "relative_path_to_charmcraft_yaml": "tests/integration/relation_tests/application-charm"
+  },
+  {
+    "github_repository": "canonical/mongos-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/s3-integrator",
-    "ref": "main",
+    "github_repository": "canonical/mongos-operator",
+    "ref": "charmcraft-3-migration",
+    "relative_path_to_charmcraft_yaml": "tests/integration/application"
+  },
+  {
+    "github_repository": "canonical/mongos-k8s-operator",
+    "ref": "charmcraft-3-migration",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/mongos-k8s-operator",
+    "ref": "charmcraft-3-migration",
+    "relative_path_to_charmcraft_yaml": "tests/integration/application"
   }
 ]
