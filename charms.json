@@ -198,5 +198,10 @@
     "github_repository": "canonical/kfp-operators",
     "ref": "KF-6684-refactor-ci-with-build",
     "relative_path_to_charmcraft_yaml": "charms/kfp-api"
+  },
+  {
+    "github_repository": "canonical/kfp-operators",
+    "ref": "KF-6684-refactor-ci-with-build",
+    "relative_path_to_charmcraft_yaml": "charms/kfp-metadata-writer"
   }
 ]
