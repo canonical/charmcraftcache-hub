@@ -233,5 +233,10 @@
     "github_repository": "canonical/kfp-operators",
     "ref": "KF-6684-refactor-ci-with-build",
     "relative_path_to_charmcraft_yaml": "charms/kfp-viz"
+  },
+  {
+    "github_repository": "canonical/charmed-etcd-operator",
+    "ref": "make-continuous-writes-a-fixture",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
