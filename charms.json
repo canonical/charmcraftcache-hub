@@ -223,5 +223,10 @@
     "github_repository": "canonical/kfp-operators",
     "ref": "KF-6684-refactor-ci-with-build",
     "relative_path_to_charmcraft_yaml": "charms/kfp-ui"
+  },
+  {
+    "github_repository": "canonical/kfp-operators",
+    "ref": "KF-6684-refactor-ci-with-build",
+    "relative_path_to_charmcraft_yaml": "charms/kfp-viewer"
   }
 ]
