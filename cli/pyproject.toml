@@ -1,27 +1,32 @@
-[tool.poetry]
+[project]
 name = "cli"
 version = "0.1.0"
 description = ""
-authors = ["Carl Csaposs <carl.csaposs@canonical.com>"]
+authors = [
+    {name = "Carl Csaposs", email = "carl.csaposs@canonical.com"}
+]
 readme = "README.md"
+requires-python = ">=3.10"  # TODO: bump to >=3.12 when arm runners move to 24.04. enum.StrEnum requires >=3.11
+dependencies = [
+    "pyyaml>=6.0.2",
+    "requests>=2.32.3",
+    "uritemplate>=4.1.1",
+    "charmcraftcache>=0.6.2"
+]
 
-[tool.poetry.scripts]
+[project.scripts]
 collect-charms = "cli.collect_charms:main"
 collect-platforms = "cli.collect_platforms:main"
 build = "cli.build:main"
 release = "cli.release:main"
 add-charm = "cli.add_charm_branch:main"
 
-[tool.poetry.dependencies]
-python = ">=3.10"  # TODO: bump to >=3.12 when arm runners move to 24.04. enum.StrEnum requires >=3.11
-pyyaml = "^6.0.1"
-requests = "^2.32.3"
-uritemplate = "^4.1.1"
-charmcraftcache = ">=0.6.0"
-
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+requires-poetry = ">=2.0"
 
 [tool.ruff]
 line-length = 100
