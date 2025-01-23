@@ -8,7 +8,7 @@ body:
       value: |
         Adding your charm branch enables charmcraftcache-hub to build wheels for your Python dependencies—which enables you to use charmcraftcache for faster builds
   - type: input
-    id: repo
+    id: repository
     attributes:
       label: GitHub repository
       description: "Format: organization/name"
