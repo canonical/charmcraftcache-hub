@@ -201,42 +201,42 @@
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "KF-6684-refactor-ci-with-build",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-api"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "KF-6684-refactor-ci-with-build",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-metadata-writer"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "KF-6684-refactor-ci-with-build",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-persistence"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "KF-6684-refactor-ci-with-build",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-profile-controller"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "KF-6684-refactor-ci-with-build",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-schedwf"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "KF-6684-refactor-ci-with-build",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-ui"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "KF-6684-refactor-ci-with-build",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-viewer"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "KF-6684-refactor-ci-with-build",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-viz"
   },
   {
