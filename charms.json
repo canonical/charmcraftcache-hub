@@ -270,16 +270,6 @@
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
-    "github_repository": "canonical/kubeflow-tensorboards-operator",
-    "ref": "KF-6217-use-cache-builds-dev-branch",
-    "relative_path_to_charmcraft_yaml": "charms/tensorboard-controller"
-  },
-  {
-    "github_repository": "canonical/kubeflow-tensorboards-operator",
-    "ref": "KF-6217-use-cache-builds-dev-branch",
-    "relative_path_to_charmcraft_yaml": "charms/tensorboards-web-app"
-  },
-  {
     "github_repository": "canonical/notebook-operators",
     "ref": "KF-6217-use-cache-builds-dev-branch",
     "relative_path_to_charmcraft_yaml": "charms/jupyter-controller"
