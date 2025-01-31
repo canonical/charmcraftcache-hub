@@ -318,5 +318,10 @@
     "github_repository": "canonical/istio-operators",
     "ref": "KF-6217-use-cache-builds-dev-branch",
     "relative_path_to_charmcraft_yaml": "charms/istio-gateway"
+  },
+  {
+    "github_repository": "canonical/istio-operators",
+    "ref": "KF-6217-use-cache-builds-dev-branch",
+    "relative_path_to_charmcraft_yaml": "charms/istio-pilot"
   }
 ]
