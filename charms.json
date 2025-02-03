@@ -338,5 +338,10 @@
     "github_repository": "canonical/katib-operators",
     "ref": "kf-6770-cached-builds",
     "relative_path_to_charmcraft_yaml": "charms/katib-controller"
+  },
+  {
+    "github_repository": "canonical/katib-operators",
+    "ref": "kf-6770-cached-builds",
+    "relative_path_to_charmcraft_yaml": "charms/katib-db-manager"
   }
 ]
