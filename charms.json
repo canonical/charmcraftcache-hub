@@ -328,5 +328,10 @@
     "github_repository": "canonical/katib-operators",
     "ref": "kf-6770-cached-builds",
     "relative_path_to_charmcraft_yaml": "charms/katib-ui"
+  },
+  {
+    "github_repository": "canonical/mysql-router-operator",
+    "ref": "charmcraft-3",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
