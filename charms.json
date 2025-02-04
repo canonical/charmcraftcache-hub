@@ -353,5 +353,10 @@
     "github_repository": "canonical/kfp-operators",
     "ref": "track/2.3",
     "relative_path_to_charmcraft_yaml": "charms/kfp-metadata-writer"
+  },
+  {
+    "github_repository": "canonical/kfp-operators",
+    "ref": "track/2.3",
+    "relative_path_to_charmcraft_yaml": "charms/kfp-persistence"
   }
 ]
