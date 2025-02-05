@@ -383,5 +383,10 @@
     "github_repository": "canonical/kfp-operators",
     "ref": "track/2.3",
     "relative_path_to_charmcraft_yaml": "charms/kfp-viz"
+  },
+  {
+    "github_repository": "canonical/kafka-bundle",
+    "ref": "wip-fix-ci",
+    "relative_path_to_charmcraft_yaml": "tests/integration/bundle/app-charm"
   }
 ]
