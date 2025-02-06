@@ -295,11 +295,6 @@
     "relative_path_to_charmcraft_yaml": "charms/knative-eventing"
   },
   {
-    "github_repository": "canonical/charmed-etcd-operator",
-    "ref": "upgrade-to-2404-base",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
     "github_repository": "canonical/kubeflow-tensorboards-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/tensorboard-controller"
