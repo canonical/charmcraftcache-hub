@@ -41,7 +41,7 @@
   },
   {
     "github_repository": "canonical/charmed-etcd-operator",
-    "ref": "main",
+    "ref": "3.5/edge",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
