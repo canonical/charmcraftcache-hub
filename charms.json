@@ -383,5 +383,10 @@
     "github_repository": "canonical/kafka-bundle",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/bundle/app-charm"
+  },
+  {
+    "github_repository": "canonical/mysql-test-app",
+    "ref": "charmcraft-3",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
