@@ -403,5 +403,10 @@
     "github_repository": "canonical/oauth2-proxy-k8s-operator",
     "ref": "ch/cache",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/hydra-operator",
+    "ref": "ch/cache",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
