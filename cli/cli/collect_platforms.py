@@ -17,7 +17,7 @@ class _Architecture(enum.StrEnum):
 
 _RUNNERS = {
     _Architecture.X64: "ubuntu-latest",
-    _Architecture.ARM64: ["self-hosted", "data-platform", "ubuntu", "ARM64", "4cpu16ram"],
+    _Architecture.ARM64: "ubuntu-24.04-arm",
 }
 
 
