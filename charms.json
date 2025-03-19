@@ -418,5 +418,10 @@
     "github_repository": "canonical/postgresql-k8s-operator",
     "ref": "16/edge",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/postgresql-operator",
+    "ref": "16/edge",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
