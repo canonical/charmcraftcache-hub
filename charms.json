@@ -426,7 +426,7 @@
   },
   {
     "github_repository": "canonical/identity-platform-login-ui-operator",
-    "ref": "IAM-1362-standardize-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   }
 ]
