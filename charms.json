@@ -438,5 +438,10 @@
     "github_repository": "canonical/hydra-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/openfga-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
