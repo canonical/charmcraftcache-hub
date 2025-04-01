@@ -405,11 +405,6 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/hydra-operator",
-    "ref": "ch/cache",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
     "github_repository": "canonical/identity-platform-admin-ui-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
