@@ -132,12 +132,12 @@
   {
     "github_repository": "canonical/object-storage-integrators",
     "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
+    "relative_path_to_charmcraft_yaml": "azure_storage"
   },
   {
     "github_repository": "canonical/object-storage-integrators",
     "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/test-charm-azure"
+    "relative_path_to_charmcraft_yaml": "azure_storage/tests/integration/test-charm-azure"
   },
   {
     "github_repository": "canonical/mongodb-operator",
