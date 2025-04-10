@@ -453,5 +453,10 @@
     "github_repository": "canonical/oathkeeper-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/oauth2-proxy-k8s-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
