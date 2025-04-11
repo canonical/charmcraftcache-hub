@@ -463,5 +463,10 @@
     "github_repository": "canonical/kratos-external-idp-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/glauth-utils",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
