@@ -473,5 +473,10 @@
     "github_repository": "canonical/user-verification-service-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/feast-operators",
+    "ref": "KF-7025-create-integrator-charm",
+    "relative_path_to_charmcraft_yaml": "charms/feast-integrator"
   }
 ]
