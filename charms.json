@@ -55,6 +55,11 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
+    "github_repository": "canonical/charmed-etcd-operator",
+    "ref": "3.5/edge",
+    "relative_path_to_charmcraft_yaml": "tests/integration/client_relations/requirer-charm"
+  },
+  {
     "github_repository": "canonical/kafka-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
@@ -423,11 +428,6 @@
     "github_repository": "canonical/identity-platform-login-ui-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/charmed-etcd-operator",
-    "ref": "DPE-6457-ecr",
-    "relative_path_to_charmcraft_yaml": "tests/integration/client_relations/requirer-charm"
   },
   {
     "github_repository": "canonical/kratos-operator",
