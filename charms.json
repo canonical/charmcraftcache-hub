@@ -215,46 +215,6 @@
     "relative_path_to_charmcraft_yaml": "tests/integration/application-charm"
   },
   {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-api"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-metadata-writer"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-persistence"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-profile-controller"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-schedwf"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-ui"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-viewer"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-viz"
-  },
-  {
     "github_repository": "canonical/s3-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
@@ -323,16 +283,6 @@
     "github_repository": "canonical/sysbench-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/istio-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/istio-gateway"
-  },
-  {
-    "github_repository": "canonical/istio-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/istio-pilot"
   },
   {
     "github_repository": "canonical/kafka-bundle",
