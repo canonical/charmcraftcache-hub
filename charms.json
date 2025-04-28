@@ -245,16 +245,6 @@
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
-    "github_repository": "canonical/notebook-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/jupyter-controller"
-  },
-  {
-    "github_repository": "canonical/notebook-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/jupyter-ui"
-  },
-  {
     "github_repository": "canonical/sysbench-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
