@@ -335,21 +335,6 @@
     "relative_path_to_charmcraft_yaml": "charms/istio-pilot"
   },
   {
-    "github_repository": "canonical/katib-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/katib-ui"
-  },
-  {
-    "github_repository": "canonical/katib-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/katib-controller"
-  },
-  {
-    "github_repository": "canonical/katib-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/katib-db-manager"
-  },
-  {
     "github_repository": "canonical/kafka-bundle",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/bundle/app-charm"
