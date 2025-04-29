@@ -327,6 +327,11 @@
   {
     "github_repository": "canonical/istio-operators",
     "ref": "KF-7310-binary-python-pkg-install",
+    "relative_path_to_charmcraft_yaml": "charms/istio-gateway"
+  },
+  {
+    "github_repository": "canonical/istio-operators",
+    "ref": "KF-7310-binary-python-pkg-install",
     "relative_path_to_charmcraft_yaml": "charms/istio-pilot"
   }
 ]
