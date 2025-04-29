@@ -323,5 +323,10 @@
     "github_repository": "canonical/ldap-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/istio-operators",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "charms/istio-gateway"
   }
 ]
