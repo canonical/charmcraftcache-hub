@@ -48,6 +48,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: ccchub-repo/
+          fetch-depth: 0  # Checkout history with git tags
       - name: Install CLI
         run: pipx install ./ccchub-repo/cli/
       - name: Set up environment
