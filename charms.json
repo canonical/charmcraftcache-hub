@@ -338,5 +338,10 @@
     "github_repository": "canonical/feast-operators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/feast-integrator"
+  },
+  {
+    "github_repository": "canonical/katib-operators",
+    "ref": "orfeas-k-fix-ci",
+    "relative_path_to_charmcraft_yaml": "charms/katib-controller"
   }
 ]
