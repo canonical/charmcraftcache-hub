@@ -348,5 +348,10 @@
     "github_repository": "canonical/katib-operators",
     "ref": "orfeas-k-fix-ci",
     "relative_path_to_charmcraft_yaml": "charms/katib-db-manager"
+  },
+  {
+    "github_repository": "canonical/katib-operators",
+    "ref": "orfeas-k-fix-ci",
+    "relative_path_to_charmcraft_yaml": "charms/katib-ui"
   }
 ]
