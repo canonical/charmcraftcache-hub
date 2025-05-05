@@ -363,5 +363,10 @@
     "github_repository": "canonical/kfp-operators",
     "ref": "orfeas-k-fix-ci",
     "relative_path_to_charmcraft_yaml": "charms/kfp-metadata-writer"
+  },
+  {
+    "github_repository": "canonical/kfp-operators",
+    "ref": "orfeas-k-fix-ci",
+    "relative_path_to_charmcraft_yaml": "charms/kfp-persistence"
   }
 ]
