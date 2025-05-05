@@ -383,5 +383,10 @@
     "github_repository": "canonical/knative-operators",
     "ref": "orfeas-k-fix-ci",
     "relative_path_to_charmcraft_yaml": "charms/knative-eventing"
+  },
+  {
+    "github_repository": "canonical/knative-operators",
+    "ref": "orfeas-k-fix-ci",
+    "relative_path_to_charmcraft_yaml": "charms/knative-operator"
   }
 ]
