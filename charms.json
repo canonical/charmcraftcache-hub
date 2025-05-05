@@ -408,5 +408,10 @@
     "github_repository": "canonical/kfp-operators",
     "ref": "orfeas-k-fix-ci",
     "relative_path_to_charmcraft_yaml": "charms/kfp-ui"
+  },
+  {
+    "github_repository": "canonical/kubeflow-tensorboards-operator",
+    "ref": "orfeas-k-fix-ci",
+    "relative_path_to_charmcraft_yaml": "charms/tensorboard-controller"
   }
 ]
