@@ -341,82 +341,82 @@
   },
   {
     "github_repository": "canonical/katib-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/katib-controller"
   },
   {
     "github_repository": "canonical/katib-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/katib-db-manager"
   },
   {
     "github_repository": "canonical/katib-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/katib-ui"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-api"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-metadata-writer"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-persistence"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-schedwf"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-viz"
   },
   {
     "github_repository": "canonical/knative-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/knative-eventing"
   },
   {
     "github_repository": "canonical/knative-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/knative-operator"
   },
   {
     "github_repository": "canonical/knative-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/knative-serving"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-profile-controller"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-viewer"
   },
   {
     "github_repository": "canonical/kfp-operators",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-ui"
   },
   {
     "github_repository": "canonical/kubeflow-tensorboards-operator",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/tensorboard-controller"
   },
   {
     "github_repository": "canonical/kubeflow-tensorboards-operator",
-    "ref": "orfeas-k-fix-ci",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/tensorboards-web-app"
   }
 ]
