@@ -418,10 +418,5 @@
     "github_repository": "canonical/kubeflow-tensorboards-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/tensorboards-web-app"
-  },
-  {
-    "github_repository": "canonical/mysql-router-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
   }
 ]
