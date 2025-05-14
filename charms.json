@@ -423,5 +423,10 @@
     "github_repository": "canonical/mysql-router-operator",
     "ref": "refresh-v3-draft",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/mysql-router-operator",
+    "ref": "20.04-pip",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
