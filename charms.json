@@ -340,21 +340,6 @@
     "relative_path_to_charmcraft_yaml": "charms/feast-integrator"
   },
   {
-    "github_repository": "canonical/katib-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/katib-controller"
-  },
-  {
-    "github_repository": "canonical/katib-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/katib-db-manager"
-  },
-  {
-    "github_repository": "canonical/katib-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/katib-ui"
-  },
-  {
     "github_repository": "canonical/kfp-operators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-api"
