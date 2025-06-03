@@ -135,36 +135,6 @@
     "relative_path_to_charmcraft_yaml": "azure_storage/tests/integration/test-charm-azure"
   },
   {
-    "github_repository": "canonical/mongodb-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mongodb-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/sharding_tests/application"
-  },
-  {
-    "github_repository": "canonical/mongodb-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/relation_tests/new_relations/application-charm"
-  },
-  {
-    "github_repository": "canonical/mongodb-k8s-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mongodb-k8s-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/ha_tests/application_charm"
-  },
-  {
-    "github_repository": "canonical/mongodb-k8s-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/relation_tests/application-charm"
-  },
-  {
     "github_repository": "canonical/mongos-operator",
     "ref": "6/edge",
     "relative_path_to_charmcraft_yaml": "."
