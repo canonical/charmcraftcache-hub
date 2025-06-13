@@ -328,5 +328,10 @@
     "github_repository": "canonical/wazuh-indexer-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/relations/opensearch_provider/application-charm"
+  },
+  {
+    "github_repository": "canonical/mongo-single-kernel-library",
+    "ref": "6/edge",
+    "relative_path_to_charmcraft_yaml": "tests/charms/mongos_k8s_test_charm"
   }
 ]
