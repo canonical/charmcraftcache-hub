@@ -333,5 +333,20 @@
     "github_repository": "canonical/mongo-single-kernel-library",
     "ref": "6/edge",
     "relative_path_to_charmcraft_yaml": "tests/charms/mongodb_test_charm"
+  },
+  {
+    "github_repository": "canonical/mongo-single-kernel-library",
+    "ref": "6/edge",
+    "relative_path_to_charmcraft_yaml": "tests/charms/mongodb_k8s_test_charm"
+  },
+  {
+    "github_repository": "canonical/mongo-single-kernel-library",
+    "ref": "6/edge",
+    "relative_path_to_charmcraft_yaml": "tests/charms/mongos_test_charm"
+  },
+  {
+    "github_repository": "canonical/mongo-single-kernel-library",
+    "ref": "6/edge",
+    "relative_path_to_charmcraft_yaml": "tests/charms/mongos_k8s_test_charm"
   }
 ]
