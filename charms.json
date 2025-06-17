@@ -316,11 +316,6 @@
   },
   {
     "github_repository": "canonical/wazuh-indexer-operator",
-    "ref": "chore/merge_upstream",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/wazuh-indexer-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
