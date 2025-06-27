@@ -453,5 +453,10 @@
     "github_repository": "canonical/kfp-operators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kfp-profile-controller"
+  },
+  {
+    "github_repository": "canonical/kfp-operators",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "charms/kfp-schedwf"
   }
 ]
