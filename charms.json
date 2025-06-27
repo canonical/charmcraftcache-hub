@@ -433,5 +433,10 @@
     "github_repository": "canonical/istio-operators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/istio-gateway"
+  },
+  {
+    "github_repository": "canonical/kfp-operators",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "charms/kfp-api"
   }
 ]
