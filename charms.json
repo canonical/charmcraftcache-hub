@@ -478,5 +478,10 @@
     "github_repository": "canonical/kubeflow-tensorboards-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/tensorboard-controller"
+  },
+  {
+    "github_repository": "canonical/kubeflow-tensorboards-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "charms/tensorboards-web-app"
   }
 ]
