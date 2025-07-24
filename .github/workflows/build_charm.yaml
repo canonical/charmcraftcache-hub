@@ -49,6 +49,12 @@ jobs:
         with:
           path: ccchub-repo/
           fetch-depth: 0  # Checkout history with git tags
+      - name: (IS hosted) Install pipx
+        if: ${{ contains(matrix.platform.runner, 'self-hosted') }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install pipx -y
+          pipx ensurepath
       - name: Install CLI
         run: pipx install ./ccchub-repo/cli/
       - name: Set up environment
