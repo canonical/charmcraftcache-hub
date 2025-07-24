@@ -13,11 +13,14 @@ from . import charm, checkout
 class _Architecture(enum.StrEnum):
     X64 = "amd64"
     ARM64 = "arm64"
+    S390X = "s390x"
 
 
 _RUNNERS = {
     _Architecture.X64: "ubuntu-latest",
     _Architecture.ARM64: "ubuntu-24.04-arm",
+    # No sizes (e.g. "large") currently available for s390x IS-hosted runners
+    _Architecture.S390X: ["self-hosted", "s390x", "noble"],
 }
 
 
