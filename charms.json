@@ -458,5 +458,10 @@
     "github_repository": "canonical/mysql-test-app",
     "ref": "fix-build",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/mysql-test-app",
+    "ref": "s390x",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
