@@ -463,5 +463,10 @@
     "github_repository": "canonical/mongo-single-kernel-library",
     "ref": "6/edge",
     "relative_path_to_charmcraft_yaml": "tests/integration/applications/client_relations_charm"
+  },
+  {
+    "github_repository": "canonical/mongo-single-kernel-library",
+    "ref": "6/edge",
+    "relative_path_to_charmcraft_yaml": "tests/integration/applications/continuous_write_charm"
   }
 ]
