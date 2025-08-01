@@ -473,5 +473,10 @@
     "github_repository": "canonical/mongo-single-kernel-library",
     "ref": "6/edge",
     "relative_path_to_charmcraft_yaml": "tests/integration/applications/mongos_client_charm"
+  },
+  {
+    "github_repository": "canonical/sysbench-operator",
+    "ref": "s390x",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
