@@ -453,15 +453,5 @@
     "github_repository": "canonical/mongo-single-kernel-library",
     "ref": "6/edge",
     "relative_path_to_charmcraft_yaml": "tests/integration/applications/mongos_client_charm"
-  },
-  {
-    "github_repository": "canonical/test-runners-data-platform",
-    "ref": "newmain",
-    "relative_path_to_charmcraft_yaml": "kubernetes"
-  },
-  {
-    "github_repository": "canonical/test-runners-data-platform",
-    "ref": "newmain",
-    "relative_path_to_charmcraft_yaml": "machines"
   }
 ]
