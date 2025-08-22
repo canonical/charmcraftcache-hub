@@ -1,457 +1,477 @@
 [
-  {
-    "github_repository": "canonical/mysql-router-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mysql-router-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mysql-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mysql-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mysql-test-app",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/postgresql-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/postgresql-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/pgbouncer-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/postgresql-test-app",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/charmed-etcd-operator",
-    "ref": "3.6/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/charmed-etcd-operator",
-    "ref": "3.6/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/client_relations/requirer-charm"
-  },
-  {
-    "github_repository": "canonical/kafka-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/kafka-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
-    "github_repository": "canonical/kafka-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/kafka-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
-    "github_repository": "canonical/zookeeper-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/zookeeper-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
-    "github_repository": "canonical/zookeeper-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/zookeeper-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
-    "github_repository": "canonical/karapace-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/karapace-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
-    "github_repository": "canonical/karapace-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/karapace-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
-    "github_repository": "canonical/spark-history-server-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/spark-integration-hub-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/spark-integration-hub-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
-    "github_repository": "canonical/object-storage-integrators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "azure_storage"
-  },
-  {
-    "github_repository": "canonical/object-storage-integrators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "azure_storage/tests/integration/test-charm-azure"
-  },
-  {
-    "github_repository": "canonical/mongodb-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mongodb-k8s-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mongos-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/mongos-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/application"
-  },
-  {
-    "github_repository": "canonical/mongos-k8s-operator",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/opensearch-operator",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/opensearch-operator",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/relations/opensearch_provider/application-charm"
-  },
-  {
-    "github_repository": "canonical/opensearch-dashboards-operator",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/opensearch-dashboards-operator",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/application-charm"
-  },
-  {
-    "github_repository": "canonical/s3-integrator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/s3-integrator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/application-charm"
-  },
-  {
-    "github_repository": "canonical/data-integrator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/data-integrator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
-    "github_repository": "canonical/kyuubi-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/sysbench-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/kafka-bundle",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/bundle/app-charm"
-  },
-  {
-    "github_repository": "canonical/redis-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/charm-rolling-ops",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/oauth2-proxy-k8s-operator",
-    "ref": "ch/cache",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/identity-platform-admin-ui-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/postgresql-k8s-operator",
-    "ref": "16/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/postgresql-operator",
-    "ref": "16/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/identity-platform-login-ui-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/kratos-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/hydra-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/openfga-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/glauth-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/oathkeeper-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/oauth2-proxy-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/kratos-external-idp-integrator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/glauth-utils",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/user-verification-service-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/ldap-integrator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/feast-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/feast-integrator"
-  },
-  {
-    "github_repository": "canonical/knative-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/knative-eventing"
-  },
-  {
-    "github_repository": "canonical/knative-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/knative-operator"
-  },
-  {
-    "github_repository": "canonical/knative-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/knative-serving"
-  },
-  {
-    "github_repository": "canonical/feast-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/feast-ui"
-  },
-  {
-    "github_repository": "canonical/operator-workflows",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/workflows/integration/test-upload-charm"
-  },
-  {
-    "github_repository": "canonical/feast-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/feast-integrator/tests/integration/configuration-requirer-tester"
-  },
-  {
-    "github_repository": "canonical/wazuh-indexer-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/wazuh-indexer-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/relations/opensearch_provider/application-charm"
-  },
-  {
-    "github_repository": "canonical/katib-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/katib-controller"
-  },
-  {
-    "github_repository": "canonical/katib-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/katib-ui"
-  },
-  {
-    "github_repository": "canonical/katib-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/katib-db-manager"
-  },
-  {
-    "github_repository": "canonical/hook-service-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/istio-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/istio-pilot"
-  },
-  {
-    "github_repository": "canonical/istio-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/istio-gateway"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-api"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-metadata-writer"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-persistence"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-profile-controller"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-schedwf"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-ui"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-viewer"
-  },
-  {
-    "github_repository": "canonical/kfp-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/kfp-viz"
-  },
-  {
-    "github_repository": "canonical/kubeflow-tensorboards-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/tensorboard-controller"
-  },
-  {
-    "github_repository": "canonical/kubeflow-tensorboards-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/tensorboards-web-app"
-  },
-  {
-    "github_repository": "canonical/notebook-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/jupyter-controller"
-  },
-  {
-    "github_repository": "canonical/notebook-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/jupyter-ui"
-  },
-  {
-    "github_repository": "canonical/mongo-single-kernel-library",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/applications/client_relations_charm"
-  },
-  {
-    "github_repository": "canonical/mongo-single-kernel-library",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/applications/continuous_write_charm"
-  },
-  {
-    "github_repository": "canonical/mongo-single-kernel-library",
-    "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/applications/mongos_client_charm"
-  }
+    {
+        "github_repository": "canonical/mysql-router-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/mysql-router-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/mysql-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/mysql-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/mysql-test-app",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/postgresql-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/postgresql-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/pgbouncer-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/postgresql-test-app",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/charmed-etcd-operator",
+        "ref": "3.6/edge",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/charmed-etcd-operator",
+        "ref": "3.6/edge",
+        "relative_path_to_charmcraft_yaml": "tests/integration/client_relations/requirer-charm"
+    },
+    {
+        "github_repository": "canonical/kafka-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/kafka-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
+    },
+    {
+        "github_repository": "canonical/kafka-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/kafka-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
+    },
+    {
+        "github_repository": "canonical/zookeeper-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/zookeeper-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
+    },
+    {
+        "github_repository": "canonical/zookeeper-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/zookeeper-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
+    },
+    {
+        "github_repository": "canonical/karapace-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/karapace-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
+    },
+    {
+        "github_repository": "canonical/karapace-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/karapace-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
+    },
+    {
+        "github_repository": "canonical/spark-history-server-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/spark-integration-hub-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/spark-integration-hub-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
+    },
+    {
+        "github_repository": "canonical/object-storage-integrators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "azure_storage"
+    },
+    {
+        "github_repository": "canonical/object-storage-integrators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "azure_storage/tests/integration/test-charm-azure"
+    },
+    {
+        "github_repository": "canonical/mongodb-operator",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/mongodb-k8s-operator",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/mongos-operator",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/mongos-operator",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "tests/integration/application"
+    },
+    {
+        "github_repository": "canonical/mongos-k8s-operator",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/opensearch-operator",
+        "ref": "2/edge",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/opensearch-operator",
+        "ref": "2/edge",
+        "relative_path_to_charmcraft_yaml": "tests/integration/relations/opensearch_provider/application-charm"
+    },
+    {
+        "github_repository": "canonical/opensearch-dashboards-operator",
+        "ref": "2/edge",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/opensearch-dashboards-operator",
+        "ref": "2/edge",
+        "relative_path_to_charmcraft_yaml": "tests/integration/application-charm"
+    },
+    {
+        "github_repository": "canonical/s3-integrator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/s3-integrator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/integration/application-charm"
+    },
+    {
+        "github_repository": "canonical/data-integrator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/data-integrator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
+    },
+    {
+        "github_repository": "canonical/kyuubi-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/sysbench-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/kafka-bundle",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/integration/bundle/app-charm"
+    },
+    {
+        "github_repository": "canonical/redis-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/charm-rolling-ops",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/oauth2-proxy-k8s-operator",
+        "ref": "ch/cache",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/identity-platform-admin-ui-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/postgresql-k8s-operator",
+        "ref": "16/edge",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/postgresql-operator",
+        "ref": "16/edge",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/identity-platform-login-ui-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/kratos-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/hydra-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/openfga-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/glauth-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/oathkeeper-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/oauth2-proxy-k8s-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/kratos-external-idp-integrator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/glauth-utils",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/user-verification-service-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/ldap-integrator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/feast-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/feast-integrator"
+    },
+    {
+        "github_repository": "canonical/knative-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/knative-eventing"
+    },
+    {
+        "github_repository": "canonical/knative-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/knative-operator"
+    },
+    {
+        "github_repository": "canonical/knative-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/knative-serving"
+    },
+    {
+        "github_repository": "canonical/feast-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/feast-ui"
+    },
+    {
+        "github_repository": "canonical/operator-workflows",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/workflows/integration/test-upload-charm"
+    },
+    {
+        "github_repository": "canonical/feast-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/feast-integrator/tests/integration/configuration-requirer-tester"
+    },
+    {
+        "github_repository": "canonical/wazuh-indexer-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/wazuh-indexer-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "tests/integration/relations/opensearch_provider/application-charm"
+    },
+    {
+        "github_repository": "canonical/katib-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/katib-controller"
+    },
+    {
+        "github_repository": "canonical/katib-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/katib-ui"
+    },
+    {
+        "github_repository": "canonical/katib-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/katib-db-manager"
+    },
+    {
+        "github_repository": "canonical/hook-service-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "."
+    },
+    {
+        "github_repository": "canonical/istio-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/istio-pilot"
+    },
+    {
+        "github_repository": "canonical/istio-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/istio-gateway"
+    },
+    {
+        "github_repository": "canonical/kfp-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/kfp-api"
+    },
+    {
+        "github_repository": "canonical/kfp-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/kfp-metadata-writer"
+    },
+    {
+        "github_repository": "canonical/kfp-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/kfp-persistence"
+    },
+    {
+        "github_repository": "canonical/kfp-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/kfp-profile-controller"
+    },
+    {
+        "github_repository": "canonical/kfp-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/kfp-schedwf"
+    },
+    {
+        "github_repository": "canonical/kfp-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/kfp-ui"
+    },
+    {
+        "github_repository": "canonical/kfp-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/kfp-viewer"
+    },
+    {
+        "github_repository": "canonical/kfp-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/kfp-viz"
+    },
+    {
+        "github_repository": "canonical/kubeflow-tensorboards-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/tensorboard-controller"
+    },
+    {
+        "github_repository": "canonical/kubeflow-tensorboards-operator",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/tensorboards-web-app"
+    },
+    {
+        "github_repository": "canonical/notebook-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/jupyter-controller"
+    },
+    {
+        "github_repository": "canonical/notebook-operators",
+        "ref": "main",
+        "relative_path_to_charmcraft_yaml": "charms/jupyter-ui"
+    },
+    {
+        "github_repository": "canonical/mongo-single-kernel-library",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "tests/integration/applications/client_relations_charm"
+    },
+    {
+        "github_repository": "canonical/mongo-single-kernel-library",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "tests/integration/applications/continuous_write_charm"
+    },
+    {
+        "github_repository": "canonical/mongo-single-kernel-library",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "tests/integration/applications/mongos_client_charm"
+    },
+    {
+        "github_repository": "canonical/mongo-single-kernel-library",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "tests/charms/mongodb_test_charm"
+    },
+    {
+        "github_repository": "canonical/mongo-single-kernel-library",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "tests/charms/mongodb_k8s_test_charm"
+    },
+    {
+        "github_repository": "canonical/mongo-single-kernel-library",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "tests/charms/mongos_test_charm"
+    },
+    {
+        "github_repository": "canonical/mongo-single-kernel-library",
+        "ref": "6/edge",
+        "relative_path_to_charmcraft_yaml": "tests/charms/mongos_k8s_test_charm"
+    }
 ]
