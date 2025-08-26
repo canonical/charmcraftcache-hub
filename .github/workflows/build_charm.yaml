@@ -57,6 +57,14 @@ jobs:
           pipx ensurepath
       - name: Install CLI
         run: pipx install ./ccchub-repo/cli/
+      # Needed to install poetry on s390x
+      - name: (IS hosted) Install rust toolchain
+        if: ${{ contains(matrix.platform.runner, 'self-hosted') }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install pkg-config rustup -y
+          rustup set profile minimal
+          rustup default stable
       - name: Set up environment
         run: |
           sudo adduser "$USER" lxd
