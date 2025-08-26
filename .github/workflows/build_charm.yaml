@@ -68,6 +68,7 @@ jobs:
           sudo iptables -P FORWARD ACCEPT
 
           sudo snap install charmcraft --classic
+          pipx install poetry charmcraftlocal
       - run: snap list
       - name: Build charm
         run: sudo --user "$USER" --preserve-env --preserve-env=PATH -- env -- build --github-repository='${{ inputs.github_repository }}' --ref='${{ inputs.ref }}' --relative-path-to-charmcraft-yaml='${{ inputs.relative_path_to_charmcraft_yaml }}' --platform='${{ matrix.platform.name }}'
