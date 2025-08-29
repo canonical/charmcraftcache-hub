@@ -1,12 +1,12 @@
 [
   {
     "github_repository": "canonical/mysql-router-operators",
-    "ref": "main",
+    "ref": "dpe",
     "relative_path_to_charmcraft_yaml": "kubernetes"
   },
   {
     "github_repository": "canonical/mysql-router-operators",
-    "ref": "main",
+    "ref": "dpe",
     "relative_path_to_charmcraft_yaml": "machines"
   },
   {
