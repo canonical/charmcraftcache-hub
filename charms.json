@@ -1,13 +1,13 @@
 [
   {
-    "github_repository": "canonical/mysql-router-operator",
+    "github_repository": "canonical/mysql-router-operators",
     "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
+    "relative_path_to_charmcraft_yaml": "kubernetes"
   },
   {
-    "github_repository": "canonical/mysql-router-k8s-operator",
+    "github_repository": "canonical/mysql-router-operators",
     "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
+    "relative_path_to_charmcraft_yaml": "machines"
   },
   {
     "github_repository": "canonical/mysql-operator",
@@ -473,16 +473,6 @@
     "github_repository": "canonical/mongo-single-kernel-library",
     "ref": "6/edge",
     "relative_path_to_charmcraft_yaml": "tests/charms/mongos_k8s_test_charm"
-  },
-  {
-    "github_repository": "canonical/test-runners-data-platform",
-    "ref": "newmain",
-    "relative_path_to_charmcraft_yaml": "kubernetes"
-  },
-  {
-    "github_repository": "canonical/test-runners-data-platform",
-    "ref": "newmain",
-    "relative_path_to_charmcraft_yaml": "machines"
   },
   {
     "github_repository": "canonical/self-signed-certificates-operator",
