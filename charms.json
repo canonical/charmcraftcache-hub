@@ -478,5 +478,15 @@
     "github_repository": "canonical/self-signed-certificates-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/k8s-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "charms/worker/k8s"
+  },
+  {
+    "github_repository": "canonical/k8s-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "charms/worker"
   }
 ]
