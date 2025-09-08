@@ -506,7 +506,7 @@
   },
   {
     "github_repository": "canonical/manual-tls-certificates-operator",
-    "ref": "latest",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
