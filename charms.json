@@ -498,5 +498,10 @@
     "github_repository": "canonical/manual-tls-certificates-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/notary-k8s-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
