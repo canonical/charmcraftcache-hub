@@ -518,5 +518,10 @@
     "github_repository": "canonical/vault-k8s-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "k8s"
+  },
+  {
+    "github_repository": "canonical/jwt-integrator",
+    "ref": "add-basic-logic",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
