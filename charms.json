@@ -521,12 +521,12 @@
   },
   {
     "github_repository": "canonical/jwt-integrator",
-    "ref": "add-basic-logic",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/jwt-integrator",
-    "ref": "add-basic-logic",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/requirer-charm"
   }
 ]
