@@ -528,5 +528,10 @@
     "github_repository": "canonical/jwt-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/requirer-charm"
+  },
+  {
+    "github_repository": "canonical/mongodb-k8s-operator",
+    "ref": "8-transition/edge",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
