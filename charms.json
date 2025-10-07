@@ -538,5 +538,10 @@
     "github_repository": "canonical/mongodb-k8s-operator",
     "ref": "8/edge",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/mongo-single-kernel-library",
+    "ref": "8/edge",
+    "relative_path_to_charmcraft_yaml": "tests/charms/mongodb_test_charm"
   }
 ]
