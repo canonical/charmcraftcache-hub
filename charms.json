@@ -608,5 +608,10 @@
     "github_repository": "canonical/mongo-single-kernel-library",
     "ref": "8-transition/edge",
     "relative_path_to_charmcraft_yaml": "tests/charms/mongos_test_charm"
+  },
+  {
+    "github_repository": "canonical/mongo-single-kernel-library",
+    "ref": "8-transition/edge",
+    "relative_path_to_charmcraft_yaml": "tests/integration/applications/client_relations_charm"
   }
 ]
