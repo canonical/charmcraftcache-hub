@@ -638,5 +638,10 @@
     "github_repository": "canonical/mongo-single-kernel-library",
     "ref": "8/edge",
     "relative_path_to_charmcraft_yaml": "tests/integration/applications/client_relations_charm"
+  },
+  {
+    "github_repository": "canonical/landscape-charm",
+    "ref": "24.04",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
