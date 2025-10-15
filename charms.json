@@ -648,5 +648,10 @@
     "github_repository": "canonical/landscape-charm",
     "ref": "latest-stable",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/landscape-charm",
+    "ref": "24.04",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
