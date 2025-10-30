@@ -215,11 +215,6 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/kafka-bundle",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/bundle/app-charm"
-  },
-  {
     "github_repository": "canonical/redis-k8s-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
