@@ -24,6 +24,10 @@ _RUNNERS = {
 }
 
 
+class ArchitectureNotSupported(KeyError):
+    """Architecture currently not supported (since runner not available)"""
+
+
 @dataclasses.dataclass(frozen=True, kw_only=True)
 class Platform:
     name: str
@@ -47,9 +51,13 @@ class Platform:
 
     @classmethod
     def from_platform(cls, platform: charmcraftcache._platforms.Platform, /):
+        try:
+            runner = _RUNNERS[platform.architecture]
+        except KeyError:
+            raise ArchitectureNotSupported
         return cls(
             name=platform,
-            runner=_RUNNERS[platform.architecture],
+            runner=runner,
             name_in_artifact=platform.name_in_release,
         )
 
@@ -63,11 +71,18 @@ def main():
     args = parser.parse_args()
     charm_ref = charm.CharmRef(**vars(args))
     charm_dir = checkout.checkout(charm_ref)
-    platforms = (
-        Platform.from_platform(platform)
-        for platform in charmcraftcache._platforms.get(charm_dir / "charmcraft.yaml")
-    )
-    platforms = [dataclasses.asdict(platform) for platform in platforms]
+    platforms = []
+    for platform in charmcraftcache._platforms.get(charm_dir / "charmcraft.yaml"):
+        try:
+            platform = Platform.from_platform(platform)
+        except ArchitectureNotSupported:
+            print(
+                f"Skipped {repr(platform)} platform since the {repr(platform.architecture)} "
+                "architecture is not currently supported by charmcraftcache-hub. Please open an "
+                "issue if you'd like this architecture to be supported"
+            )
+            continue
+        platforms.append(dataclasses.asdict(platform))
     output = f"platforms={json.dumps(platforms)}\n"
     print(output)
     with pathlib.Path(os.environ["GITHUB_OUTPUT"]).open("a", encoding="utf-8") as file:
