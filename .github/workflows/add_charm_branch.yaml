@@ -23,7 +23,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Fine-grained personal access token with permissions:
           # - "Members" organization permissions (read)
-          READ_MEMBERS_GITHUB_PAT: ${{ secrets.READ_MEMBERS_GITHUB_PAT }}  # Expires 2025-11-12
+          READ_MEMBERS_GITHUB_PAT: ${{ secrets.READ_MEMBERS_GITHUB_PAT }}  # Expires 2026-11-12
       - name: Create pull request
         if: ${{ fromJSON(steps.add-charm.outputs.success) }}
         run: |
