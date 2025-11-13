@@ -658,15 +658,5 @@
     "github_repository": "canonical/object-storage-integrators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "s3"
-  },
-  {
-    "github_repository": "canonical/microovn-operator",
-    "ref": "charmcraftcache",
-    "relative_path_to_charmcraft_yaml": "microovn"
-  },
-  {
-    "github_repository": "canonical/microovn-operator",
-    "ref": "charmcraftcache",
-    "relative_path_to_charmcraft_yaml": "tests/interface-consumer"
   }
 ]
