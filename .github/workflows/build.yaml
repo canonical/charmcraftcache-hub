@@ -30,7 +30,6 @@ jobs:
 
   build:
     strategy:
-      fail-fast: false  # Remove once `error: daemon is stopping to wait for socket activation` is less frequent
       matrix:
         charm: ${{ fromJSON(needs.collect-charms.outputs.charms) }}
     name: ${{ matrix.charm.job_name }}
