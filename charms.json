@@ -245,31 +245,6 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/identity-platform-login-ui-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/kratos-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/hydra-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/openfga-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/glauth-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
     "github_repository": "canonical/oathkeeper-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
@@ -281,21 +256,6 @@
   },
   {
     "github_repository": "canonical/kratos-external-idp-integrator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/glauth-utils",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/user-verification-service-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/ldap-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
