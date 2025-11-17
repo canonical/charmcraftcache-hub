@@ -638,5 +638,10 @@
     "github_repository": "canonical/microovn-operator",
     "ref": "charmcraftcache",
     "relative_path_to_charmcraft_yaml": "tests/interface-consumer"
+  },
+  {
+    "github_repository": "canonical/user-verification-service-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
