@@ -643,5 +643,10 @@
     "github_repository": "canonical/microovn-operator",
     "ref": "charmcraftcache",
     "relative_path_to_charmcraft_yaml": "microovn"
+  },
+  {
+    "github_repository": "canonical/glauth-utils",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
