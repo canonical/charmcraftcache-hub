@@ -95,3 +95,4 @@ jobs:
           # We only care about wheels/ directory in pip's cache
           # (https://pip.pypa.io/en/stable/topics/caching/)
           path: ~/charmcraftcache-hub-ci/charmcraft-cache/*/*/pip/wheels/
+          if-no-files-found: error
