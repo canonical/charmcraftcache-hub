@@ -430,27 +430,7 @@
     "relative_path_to_charmcraft_yaml": "tests/charms/mongos_k8s_test_charm"
   },
   {
-    "github_repository": "canonical/self-signed-certificates-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/worker/k8s"
-  },
-  {
-    "github_repository": "canonical/k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/worker"
-  },
-  {
     "github_repository": "canonical/lego-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/manual-tls-certificates-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
@@ -460,19 +440,9 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/manual-tls-certificates-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
     "github_repository": "canonical/tls-certificates-requirer-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/vault-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "k8s"
   },
   {
     "github_repository": "canonical/jwt-integrator",
@@ -633,16 +603,6 @@
     "github_repository": "canonical/openfga-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/microovn-operator",
-    "ref": "charmcraftcache",
-    "relative_path_to_charmcraft_yaml": "tests/interface-consumer"
-  },
-  {
-    "github_repository": "canonical/microovn-operator",
-    "ref": "charmcraftcache",
-    "relative_path_to_charmcraft_yaml": "microovn"
   },
   {
     "github_repository": "canonical/glauth-utils",
