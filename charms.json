@@ -626,12 +626,12 @@
   },
   {
     "github_repository": "canonical/microovn-operator",
-    "ref": "charmcraftcache",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/interface-consumer"
   },
   {
     "github_repository": "canonical/microovn-operator",
-    "ref": "charmcraftcache",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "microovn"
   }
 ]
