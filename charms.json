@@ -45,16 +45,6 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/charmed-etcd-operator",
-    "ref": "3.6/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/charmed-etcd-operator",
-    "ref": "3.6/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/client_relations/requirer-charm"
-  },
-  {
     "github_repository": "canonical/kafka-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
@@ -77,17 +67,7 @@
   {
     "github_repository": "canonical/zookeeper-operator",
     "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/zookeeper-operator",
-    "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
-  },
-  {
-    "github_repository": "canonical/zookeeper-k8s-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/zookeeper-k8s-operator",
@@ -162,11 +142,6 @@
   {
     "github_repository": "canonical/mongos-k8s-operator",
     "ref": "6/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/opensearch-operator",
-    "ref": "2/edge",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
@@ -385,16 +360,6 @@
     "relative_path_to_charmcraft_yaml": "charms/tensorboards-web-app"
   },
   {
-    "github_repository": "canonical/notebook-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/jupyter-controller"
-  },
-  {
-    "github_repository": "canonical/notebook-operators",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "charms/jupyter-ui"
-  },
-  {
     "github_repository": "canonical/mongo-single-kernel-library",
     "ref": "6/edge",
     "relative_path_to_charmcraft_yaml": "tests/integration/applications/client_relations_charm"
@@ -436,11 +401,6 @@
   },
   {
     "github_repository": "canonical/tls-certificates-requirer-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/jwt-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
