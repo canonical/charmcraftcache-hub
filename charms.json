@@ -637,6 +637,6 @@
   {
     "github_repository": "canonical/charmed-valkey-operator",
     "ref": "bootstrap",
-    "relative_path_to_charmcraft_yaml": "valkey-operator/kubernetes"
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
