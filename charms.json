@@ -608,5 +608,10 @@
     "github_repository": "canonical/jwt-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/charmed-etcd-operator",
+    "ref": "update-rust-toolchain",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
