@@ -617,6 +617,6 @@
   {
     "github_repository": "canonical/charmed-etcd-operator",
     "ref": "3.6/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/client_relations/requirer-charm/"
+    "relative_path_to_charmcraft_yaml": "tests/integration/client_relations/requirer-charm"
   }
 ]
