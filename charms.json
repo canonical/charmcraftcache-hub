@@ -623,5 +623,10 @@
     "github_repository": "canonical/opensearch-single-kernel-library",
     "ref": "DPE-9132-OpenSearch-VM-Single-Kernel-TLS-Management-workflow",
     "relative_path_to_charmcraft_yaml": "tests/charms/opensearch_test_charm"
+  },
+  {
+    "github_repository": "canonical/opensearch-single-kernel-library",
+    "ref": "feature/single-kernel",
+    "relative_path_to_charmcraft_yaml": "tests/charms/opensearch_test_charm"
   }
 ]
