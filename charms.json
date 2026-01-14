@@ -596,7 +596,7 @@
   },
   {
     "github_repository": "canonical/charmed-valkey-operator",
-    "ref": "bootstrap",
+    "ref": "9/edge",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
