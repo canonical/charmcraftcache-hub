@@ -628,5 +628,10 @@
     "github_repository": "canonical/notebook-operators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/jupyter-controller"
+  },
+  {
+    "github_repository": "canonical/mysql-operators",
+    "ref": "8.0/edge",
+    "relative_path_to_charmcraft_yaml": "machines"
   }
 ]
