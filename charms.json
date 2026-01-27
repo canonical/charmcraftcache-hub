@@ -520,17 +520,17 @@
     "relative_path_to_charmcraft_yaml": "tests/integration/applications/client_relations_charm"
   },
   {
-    "github_repository": "canonical/landscape-charm",
+    "github_repository": "canonical/landscape-server-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/landscape-charm",
+    "github_repository": "canonical/landscape-server-operator",
     "ref": "latest-stable",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/landscape-charm",
+    "github_repository": "canonical/landscape-server-operator",
     "ref": "24.04",
     "relative_path_to_charmcraft_yaml": "."
   },
@@ -638,10 +638,5 @@
     "github_repository": "canonical/mysql-operators",
     "ref": "8.0/edge",
     "relative_path_to_charmcraft_yaml": "kubernetes"
-  },
-  {
-    "github_repository": "canonical/landscape-server-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
   }
 ]
