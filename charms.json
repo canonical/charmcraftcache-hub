@@ -643,5 +643,10 @@
     "github_repository": "canonical/mysql-operators",
     "ref": "8.4/edge",
     "relative_path_to_charmcraft_yaml": "machines"
+  },
+  {
+    "github_repository": "canonical/mysql-operators",
+    "ref": "8.4/edge",
+    "relative_path_to_charmcraft_yaml": "kubernetes"
   }
 ]
