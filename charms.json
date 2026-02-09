@@ -648,10 +648,5 @@
     "github_repository": "canonical/mysql-operators",
     "ref": "8.4/edge",
     "relative_path_to_charmcraft_yaml": "kubernetes"
-  },
-  {
-    "github_repository": "canonical/microovn-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
   }
 ]
