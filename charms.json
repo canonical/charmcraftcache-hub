@@ -225,11 +225,6 @@
     "relative_path_to_charmcraft_yaml": "charms/feast-ui"
   },
   {
-    "github_repository": "canonical/operator-workflows",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/workflows/integration/test-upload-charm"
-  },
-  {
     "github_repository": "canonical/feast-operators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/feast-integrator/tests/integration/configuration-requirer-tester"
