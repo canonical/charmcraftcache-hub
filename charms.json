@@ -87,11 +87,6 @@
   {
     "github_repository": "canonical/object-storage-integrators",
     "ref": "main",
-    "relative_path_to_charmcraft_yaml": "azure_storage"
-  },
-  {
-    "github_repository": "canonical/object-storage-integrators",
-    "ref": "main",
     "relative_path_to_charmcraft_yaml": "azure_storage/tests/integration/test-charm-azure"
   },
   {
@@ -148,11 +143,6 @@
     "github_repository": "canonical/data-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
-  },
-  {
-    "github_repository": "canonical/data-integrator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
     "github_repository": "canonical/kyuubi-k8s-operator",
@@ -243,11 +233,6 @@
     "github_repository": "canonical/feast-operators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/feast-integrator/tests/integration/configuration-requirer-tester"
-  },
-  {
-    "github_repository": "canonical/wazuh-indexer-operator",
-    "ref": "main",
-    "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/wazuh-indexer-operator",
@@ -575,11 +560,6 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/opensearch-operator",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
     "github_repository": "canonical/jwt-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
@@ -638,11 +618,6 @@
     "github_repository": "canonical/mysql-router-operators",
     "ref": "8.4/edge",
     "relative_path_to_charmcraft_yaml": "kubernetes"
-  },
-  {
-    "github_repository": "canonical/mysql-router-operators",
-    "ref": "8.4/edge",
-    "relative_path_to_charmcraft_yaml": "machines"
   },
   {
     "github_repository": "canonical/mysql-test-app",
