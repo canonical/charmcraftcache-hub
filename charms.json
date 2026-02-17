@@ -22,10 +22,45 @@
   {
     "github_repository": "canonical/kafka-operator",
     "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/kafka-operator",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
+    "github_repository": "canonical/kafka-connect-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/kafka-connect-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "tests/integration/source-integrator-charm"
+  },
+  {
+    "github_repository": "canonical/kafka-connect-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "tests/integration/sink-integrator-charm"
+  },
+  {
     "github_repository": "canonical/kafka-k8s-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/kafka-k8s-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
+  },
+  {
+    "github_repository": "canonical/kafka-connect-k8s-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/kafka-connect-k8s-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
@@ -38,6 +73,11 @@
     "github_repository": "canonical/zookeeper-k8s-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
+  },
+  {
+    "github_repository": "canonical/karapace-k8s-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/karapace-k8s-operator",
