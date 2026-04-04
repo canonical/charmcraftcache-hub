@@ -663,5 +663,10 @@
     "github_repository": "canonical/valkey-operator",
     "ref": "add-client-relation",
     "relative_path_to_charmcraft_yaml": "tests/integration/clients/requirer-charm"
+  },
+  {
+    "github_repository": "canonical/data-integrator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   }
 ]
