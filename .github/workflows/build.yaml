@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          persist-credentials: false
       - name: Install CLI
         run: pipx install ./cli/
       - name: Collect charms to build from charms.json
@@ -27,6 +29,7 @@ jobs:
         run: collect-charms
     outputs:
       charms: ${{ steps.collect.outputs.charms }}
+    permissions: {}
 
   build:
     strategy:
@@ -42,6 +45,7 @@ jobs:
       ref: ${{ matrix.charm.ref }}
       relative_path_to_charmcraft_yaml: ${{ matrix.charm.relative_path_to_charmcraft_yaml }}
       charm_index: ${{ matrix.charm.charm_index }}
+    permissions: {}
 
   release:
     name: Release wheels
@@ -52,6 +56,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          persist-credentials: true
       - name: Install CLI
         run: pipx install ./cli/
       - name: Create directory

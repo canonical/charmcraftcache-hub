@@ -26,13 +26,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          persist-credentials: false
       - name: Install CLI
         run: pipx install ./cli/
       - name: Collect charm platforms to build from charmcraft.yaml
         id: collect
-        run: collect-platforms --github-repository='${{ inputs.github_repository }}' --ref='${{ inputs.ref }}' --relative-path-to-charmcraft-yaml='${{ inputs.relative_path_to_charmcraft_yaml }}'
+        run: collect-platforms --github-repository="${VAR_GITHUB_REPOSITORY}" --ref="${VAR_REF}" --relative-path-to-charmcraft-yaml="${VAR_PATH_TO_CHARMCRAFT_YAML}"
+        env:
+          VAR_GITHUB_REPOSITORY: ${{ inputs.github_repository }}
+          VAR_REF: ${{ inputs.ref }}
+          VAR_PATH_TO_CHARMCRAFT_YAML: ${{ inputs.relative_path_to_charmcraft_yaml }}
     outputs:
       platforms: ${{ steps.collect.outputs.platforms }}
+    permissions: {}
 
   build:
     strategy:
@@ -48,6 +55,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
+          persist-credentials: false
           path: ccchub-repo/
           fetch-depth: 0  # Checkout history with git tags
       - name: (IS hosted) Install pipx
@@ -80,7 +88,12 @@ jobs:
           pipx install poetry charmcraftlocal
       - run: snap list
       - name: Build charm
-        run: sudo --user "$USER" --preserve-env --preserve-env=PATH -- env -- build --github-repository='${{ inputs.github_repository }}' --ref='${{ inputs.ref }}' --relative-path-to-charmcraft-yaml='${{ inputs.relative_path_to_charmcraft_yaml }}' --platform='${{ matrix.platform.name }}'
+        run: sudo --user "$USER" --preserve-env --preserve-env=PATH -- env -- build --github-repository="${VAR_GITHUB_REPOSITORY}" --ref="${VAR_REF}" --relative-path-to-charmcraft-yaml="${VAR_PATH_TO_CHARMCRAFT_YAML}" --platform="${VAR_PLATFORM}"
+        env:
+          VAR_GITHUB_REPOSITORY: ${{ inputs.github_repository }}
+          VAR_REF: ${{ inputs.ref }}
+          VAR_PATH_TO_CHARMCRAFT_YAML: ${{ inputs.relative_path_to_charmcraft_yaml }}
+          VAR_PLATFORM: ${{ matrix.platform.name }}
       - name: Upload wheels in charmcraft cache directory
         uses: actions/upload-artifact@v7
         with:
@@ -96,3 +109,4 @@ jobs:
           # (https://pip.pypa.io/en/stable/topics/caching/)
           path: ~/charmcraftcache-hub-ci/charmcraft-cache/*/*/pip/wheels/
           if-no-files-found: error
+    permissions: {}
