@@ -11,19 +11,27 @@ jobs:
     if: ${{ contains(github.event.issue.labels.*.name, 'add-charm') }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    environment:
+      name: add-charm-branch
+      deployment: false
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          persist-credentials: true
       - name: Install CLI
         run: pipx install ./cli/
       - name: Add charm to charms.json
         id: add-charm
-        run: add-charm --issue-body='${{ github.event.issue.body }}' --issue-author='${{ github.event.issue.user.login }}'
+        run: add-charm --issue-body="${VAR_ISSUE_BODY}" --issue-author="${VAR_ISSUE_AUTHOR}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Fine-grained personal access token with permissions:
           # - "Members" organization permissions (read)
-          READ_MEMBERS_GITHUB_PAT: ${{ secrets.READ_MEMBERS_GITHUB_PAT }}  # Expires 2026-11-12
+          READ_MEMBERS_GITHUB_PAT: ${{ secrets.READ_MEMBERS_GITHUB_PAT }}  # Expires 2027-04-07
+
+          VAR_ISSUE_BODY: ${{ github.event.issue.body }}
+          VAR_ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
       - name: Create pull request
         if: ${{ fromJSON(steps.add-charm.outputs.success) }}
         run: |
@@ -32,11 +40,11 @@ jobs:
           git add charms.json
           git config user.name "GitHub Actions"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m '${{ steps.add-charm.outputs.title }}'
+          git commit -m "${VAR_TITLE}"
           # Uses token set in checkout step
           git push origin "$branch"
           # Uses GH_TOKEN environment variable
-          pr_url=$(gh pr create --head "$branch" --title '${{ steps.add-charm.outputs.title }}' --body 'Closes #${{ github.event.issue.number }}' --label add-charm)
+          pr_url=$(gh pr create --head "$branch" --title "${VAR_TITLE}" --body "Closes #${VAR_ISSUE_NUMBER}" --label add-charm)
           gh pr merge "$pr_url" --squash
           # Sleep to avoid race condition where workflow runs on the commit before the PR was merged
           sleep 10
@@ -45,11 +53,16 @@ jobs:
           gh workflow run build.yaml
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VAR_TITLE: ${{ steps.add-charm.outputs.title }}
+          VAR_ISSUE_NUMBER: ${{ github.event.issue.number }}
       - name: Comment error on GitHub issue
         if: ${{ !fromJSON(steps.add-charm.outputs.success) }}
-        run: gh issue comment '${{ github.event.issue.number }}' --body '${{ steps.add-charm.outputs.error }}' --repo '${{ github.repository }}'
+        run: gh issue comment "${VAR_ISSUE_NUMBER}" --body "${VAR_ERROR}" --repo "${VAR_REPOSITORY}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VAR_ISSUE_NUMBER: ${{ github.event.issue.number }}
+          VAR_ERROR: ${{ steps.add-charm.outputs.error }}
+          VAR_REPOSITORY: ${{ github.repository }}
     permissions:
       contents: write  # Needed to push branch
       pull-requests: write  # Needed to create & merge pull request

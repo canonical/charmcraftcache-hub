@@ -30,7 +30,7 @@ def main():
             f"https://api.github.com/orgs/canonical/members/{args.issue_author}",
             headers={
                 "Accept": "application/vnd.github+json",
-                "X-GitHub-Api-Version": "2022-11-28",
+                "X-GitHub-Api-Version": "2026-03-10",
                 "Authorization": f'Bearer {os.environ["READ_MEMBERS_GITHUB_PAT"]}',
             },
         )
