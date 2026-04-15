@@ -661,7 +661,7 @@
   },
   {
     "github_repository": "canonical/valkey-operator",
-    "ref": "add-client-relation",
+    "ref": "9/edge",
     "relative_path_to_charmcraft_yaml": "tests/integration/clients/requirer-charm"
   },
   {
