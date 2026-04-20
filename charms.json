@@ -678,5 +678,10 @@
     "github_repository": "canonical/valkey-operator",
     "ref": "arm-charm",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/valkey-operator",
+    "ref": "arm-charm",
+    "relative_path_to_charmcraft_yaml": "tests/integration/clients/requirer-charm"
   }
 ]
