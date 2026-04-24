@@ -736,6 +736,11 @@
     "github_repository": "canonical/oidc-gatekeeper-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/pvcviewer-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
   }
     "github_repository": "canonical/mlmd-operator",
     "ref": "main",
