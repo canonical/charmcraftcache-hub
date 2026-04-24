@@ -683,5 +683,10 @@
     "github_repository": "canonical/argo-operators",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/argo-controller"
+  },
+  {
+    "github_repository": "canonical/dex-auth-operator",
+    "ref": "feat/auto-backport",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
