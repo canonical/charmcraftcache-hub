@@ -686,7 +686,7 @@
   },
   {
     "github_repository": "canonical/dex-auth-operator",
-    "ref": "feat/auto-backport",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
@@ -700,6 +700,10 @@
     "relative_path_to_charmcraft_yaml": "charms/kserve-controller"
   },
   {
+    "github_repository": "canonical/kubeflow-profiles-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": ".
+  },
     "github_repository": "canonical/kubeflow-dashboard-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
@@ -710,6 +714,15 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
+    "github_repository": "canonical/metacontroller-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/mlflow-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
+  }
     "github_repository": "canonical/kubeflow-volumes-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
@@ -720,12 +733,26 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
+    "github_repository": "canonical/oidc-gatekeeper-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/pvcviewer-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
+  }
     "github_repository": "canonical/mlmd-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/resource-dispatcher",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/training-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
