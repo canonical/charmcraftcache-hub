@@ -686,7 +686,7 @@
   },
   {
     "github_repository": "canonical/dex-auth-operator",
-    "ref": "feat/auto-backport",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
