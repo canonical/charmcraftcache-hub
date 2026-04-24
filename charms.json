@@ -700,6 +700,10 @@
     "relative_path_to_charmcraft_yaml": "charms/kserve-controller"
   },
   {
+    "github_repository": "canonical/kubeflow-profiles-operator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": ".
+  },
     "github_repository": "canonical/kubeflow-dashboard-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
