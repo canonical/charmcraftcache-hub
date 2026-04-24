@@ -702,8 +702,9 @@
   {
     "github_repository": "canonical/kubeflow-profiles-operator",
     "ref": "main",
-    "relative_path_to_charmcraft_yaml": ".
+    "relative_path_to_charmcraft_yaml": "."
   },
+  {
     "github_repository": "canonical/kubeflow-dashboard-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
@@ -722,7 +723,8 @@
     "github_repository": "canonical/mlflow-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
-  }
+  },
+  {
     "github_repository": "canonical/kubeflow-volumes-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
@@ -741,7 +743,8 @@
     "github_repository": "canonical/pvcviewer-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
-  }
+  },
+  {
     "github_repository": "canonical/mlmd-operator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
