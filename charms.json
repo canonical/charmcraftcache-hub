@@ -767,8 +767,13 @@
   {
     "github_repository": "canonical/object-storage-integrator",
     "ref": "main",
+    "relative_path_to_charmcraft_yaml": "gcs/tests/integration/requirer-charm"
+  },
+  {
+    "github_repository": "canonical/object-storage-integrator",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "gcs"
-  }.
+  },
   {
     "github_repository": "canonical/object-storage-integrator",
     "ref": "main",
