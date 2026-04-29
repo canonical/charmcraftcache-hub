@@ -110,7 +110,7 @@
     "relative_path_to_charmcraft_yaml": "tests/integration/app-charm"
   },
   {
-    "github_repository": "canonical/object-storage-integrators",
+    "github_repository": "canonical/object-storage-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "azure_storage/tests/integration/test-charm-azure"
   },
@@ -510,7 +510,7 @@
     "relative_path_to_charmcraft_yaml": "tests/integration/application"
   },
   {
-    "github_repository": "canonical/object-storage-integrators",
+    "github_repository": "canonical/object-storage-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "s3"
   },
@@ -768,5 +768,25 @@
     "github_repository": "canonical/object-storage-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "gcs/tests/integration/requirer-charm"
+  },
+  {
+    "github_repository": "canonical/object-storage-integrator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "gcs"
+  },
+  {
+    "github_repository": "canonical/object-storage-integrator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "s3/tests/integration/test-charm-s3-v0"
+  },
+  {
+    "github_repository": "canonical/object-storage-integrator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "s3/tests/integration/test-charm-s3"
+  },
+  {
+    "github_repository": "canonical/object-storage-integrator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "azure_storage"
   }
 ]
