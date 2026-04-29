@@ -763,5 +763,10 @@
     "github_repository": "canonical/training-operator",
     "ref": "main-v2",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/object-storage-integrator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "gcs/tests/integration/requirer-charm"
   }
 ]
