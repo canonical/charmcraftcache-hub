@@ -767,6 +767,11 @@
   {
     "github_repository": "canonical/object-storage-integrator",
     "ref": "main",
+    "relative_path_to_charmcraft_yaml": "s3/tests/integration/test-charm-s3-v0"
+  },
+  {
+    "github_repository": "canonical/object-storage-integrator",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "s3/tests/integration/test-charm-s3"
   },
   {
