@@ -788,5 +788,10 @@
     "github_repository": "canonical/object-storage-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "azure_storage"
+  },
+  {
+    "github_repository": "canonical/data-kubeflow-integrator",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
