@@ -788,5 +788,10 @@
     "github_repository": "canonical/data-kubeflow-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/postgresql-watcher-operator",
+    "ref": "16/edge",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
