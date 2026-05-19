@@ -793,5 +793,10 @@
     "github_repository": "canonical/postgresql-watcher-operator",
     "ref": "16/edge",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/opensearch-dashboards-single-kernel-library",
+    "ref": "2/edge",
+    "relative_path_to_charmcraft_yaml": "tests/charms/vm"
   }
 ]
