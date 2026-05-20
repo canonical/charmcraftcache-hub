@@ -798,5 +798,10 @@
     "github_repository": "canonical/opensearch-dashboards-single-kernel-library",
     "ref": "2/edge",
     "relative_path_to_charmcraft_yaml": "tests/charms/vm"
+  },
+  {
+    "github_repository": "canonical/opensearch-single-kernel-library",
+    "ref": "2/edge",
+    "relative_path_to_charmcraft_yaml": "tests/charms/opensearch_test_charm"
   }
 ]
