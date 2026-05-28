@@ -19,7 +19,8 @@ class _Architecture(enum.StrEnum):
 _RUNNERS = {
     _Architecture.X64: "ubuntu-latest",
     _Architecture.ARM64: "ubuntu-24.04-arm",
-    _Architecture.S390X: "self-hosted-linux-s390x-noble-medium",
+    # Use PS6 runners while PS7 runners unstable: https://chat.canonical.com/canonical/pl/3wcxtsrzo3ykdxe6rzp5uuus8h
+    _Architecture.S390X: "self-hosted-linux-s390x-noble-edge",
 }
 
 
