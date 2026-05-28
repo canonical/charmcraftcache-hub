@@ -1,5 +1,10 @@
 name: Add charm branch
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+  queue: max
+
 on:
   issues:
     types:
