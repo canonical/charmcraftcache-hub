@@ -813,5 +813,10 @@
     "github_repository": "canonical/resource-dispatcher",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "tests/integration/manifests-tester"
+  },
+  {
+    "github_repository": "canonical/resource-dispatcher",
+    "ref": "main",
+    "relative_path_to_charmcraft_yaml": "tests/integration/manifests-tester-no-secret"
   }
 ]
