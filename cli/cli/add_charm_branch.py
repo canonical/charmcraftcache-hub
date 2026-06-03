@@ -110,7 +110,11 @@ main
             raise IssueParsingError("Invalid git ref. @carlcsaposs-canonical")
         # Validate path
         path = pathlib.Path(charm_branch.relative_path_to_charmcraft_yaml)
-        if not path.resolve().is_relative_to(pathlib.Path(".").resolve()):
+        if not (
+            path.resolve().is_relative_to(pathlib.Path(".").resolve())
+            and str(path.resolve().relative_to(pathlib.Path(".").resolve()))
+            == charm_branch.relative_path_to_charmcraft_yaml
+        ):
             raise IssueParsingError("Invalid path. @carlcsaposs-canonical")
         if "ccchub" in (
             charm_branch.github_repository,
