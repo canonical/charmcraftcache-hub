@@ -826,7 +826,7 @@
   },
   {
     "github_repository": "canonical/kserve-operators",
-    "ref": "KF-8705-implement-llmisvc-charm",
+    "ref": "llmisvc-rewrite",
     "relative_path_to_charmcraft_yaml": "charms/kserve-llmisvc"
   },
   {
