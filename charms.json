@@ -858,5 +858,10 @@
     "github_repository": "canonical/kserve-operators",
     "ref": "KF-8754-llmisvc-integration-tests",
     "relative_path_to_charmcraft_yaml": "tests/integration/gateway-metadata-provider-tester"
+  },
+  {
+    "github_repository": "canonical/kserve-operators",
+    "ref": "KF-8754-llmisvc-integration-tests",
+    "relative_path_to_charmcraft_yaml": "tests/integration/lws-controller-tester"
   }
 ]
