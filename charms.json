@@ -550,11 +550,6 @@
     "relative_path_to_charmcraft_yaml": "tests/interface-consumer"
   },
   {
-    "github_repository": "canonical/charmed-valkey-operator",
-    "ref": "9/edge",
-    "relative_path_to_charmcraft_yaml": "."
-  },
-  {
     "github_repository": "canonical/jwt-integrator",
     "ref": "main",
     "relative_path_to_charmcraft_yaml": "."
