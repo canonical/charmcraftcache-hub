@@ -21,7 +21,7 @@ jobs:
       deployment: false
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           persist-credentials: true
           # Checkout current latest commit on default branch instead of latest commit when the
