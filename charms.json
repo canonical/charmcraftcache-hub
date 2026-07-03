@@ -850,18 +850,13 @@
     "relative_path_to_charmcraft_yaml": "tests/integration/gateway-metadata-provider-tester"
   },
   {
-    "github_repository": "canonical/kserve-operators",
-    "ref": "llmisvc-rewrite",
-    "relative_path_to_charmcraft_yaml": "tests/integration/lws-controller-tester"
-  },
-  {
     "github_repository": "canonical/valkey-operator",
     "ref": "9/edge",
     "relative_path_to_charmcraft_yaml": "."
   },
   {
     "github_repository": "canonical/kserve-operators",
-    "ref": "KF-8798-implement-lws-charm",
+    "ref": "llmisvc-rewrite",
     "relative_path_to_charmcraft_yaml": "charms/lws-controller"
   },
   {
