@@ -853,5 +853,10 @@
     "github_repository": "canonical/opensearch-k8s-operator",
     "ref": "add-charm",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/kserve-operators",
+    "ref": "KF-8834-implement-llm-integrator-clean",
+    "relative_path_to_charmcraft_yaml": "charms/llm-integrator"
   }
 ]
