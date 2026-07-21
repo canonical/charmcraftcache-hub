@@ -637,12 +637,12 @@
   {
     "github_repository": "canonical/opensearch-dashboards-single-kernel-library",
     "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/charms/dashboards_charm"
+    "relative_path_to_charmcraft_yaml": "tests/charms/dashboards_vm_charm"
   },
   {
     "github_repository": "canonical/opensearch-dashboards-single-kernel-library",
     "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/dashboards_k8s_upgrade_test_charm"
+    "relative_path_to_charmcraft_yaml": "tests/charms/dashboards_k8s_charm"
   },
   {
     "github_repository": "canonical/opensearch-dashboards-single-kernel-library",
