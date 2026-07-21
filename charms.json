@@ -610,26 +610,6 @@
     "relative_path_to_charmcraft_yaml": "."
   },
   {
-    "github_repository": "canonical/opensearch-single-kernel-library",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/charms/dummy-client-charm"
-  },
-  {
-    "github_repository": "canonical/opensearch-single-kernel-library",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/charms/opensearch_k8s_2.19.4_test_charm"
-  },
-  {
-    "github_repository": "canonical/opensearch-single-kernel-library",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/charms/opensearch_k8s_test_charm"
-  },
-  {
-    "github_repository": "canonical/opensearch-single-kernel-library",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/charms/opensearch_test_charm"
-  },
-  {
     "github_repository": "canonical/opensearch-dashboards-operator",
     "ref": "2/edge",
     "relative_path_to_charmcraft_yaml": "."
@@ -637,22 +617,7 @@
   {
     "github_repository": "canonical/opensearch-dashboards-single-kernel-library",
     "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/charms/dashboards_vm_charm"
-  },
-  {
-    "github_repository": "canonical/opensearch-dashboards-single-kernel-library",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/charms/dashboards_k8s_charm"
-  },
-  {
-    "github_repository": "canonical/opensearch-dashboards-single-kernel-library",
-    "ref": "2/edge",
     "relative_path_to_charmcraft_yaml": "tests/integration/dashboards_application_charm"
-  },
-  {
-    "github_repository": "canonical/opensearch-dashboards-single-kernel-library",
-    "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "tests/integration/dashboards_tester_charm"
   },
   {
     "github_repository": "canonical/velero-operator",
