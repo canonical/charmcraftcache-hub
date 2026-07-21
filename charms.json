@@ -645,12 +645,12 @@
     "relative_path_to_charmcraft_yaml": "tests/integration/dashboards_k8s_upgrade_test_charm"
   },
   {
-    "github_repository": "canonical/mongo-single-kernel-library",
+    "github_repository": "opensearch-dashboards-single-kernel-library",
     "ref": "2/edge",
     "relative_path_to_charmcraft_yaml": "tests/integration/dashboards_application_charm"
   },
   {
-    "github_repository": "canonical/mongo-single-kernel-library",
+    "github_repository": "opensearch-dashboards-single-kernel-library",
     "ref": "2/edge",
     "relative_path_to_charmcraft_yaml": "tests/integration/dashboards_tester_charm"
   },
