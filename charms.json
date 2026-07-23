@@ -806,7 +806,7 @@
   },
   {
     "github_repository": "canonical/kserve-operators",
-    "ref": "KF-8834-implement-llm-integrator-clean",
+    "ref": "llmisvc-rewrite",
     "relative_path_to_charmcraft_yaml": "charms/llm-integrator"
   },
   {
