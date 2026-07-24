@@ -766,7 +766,7 @@
   },
   {
     "github_repository": "canonical/kserve-operators",
-    "ref": "llmisvc-rewrite",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/kserve-llmisvc"
   },
   {
@@ -796,7 +796,7 @@
   },
   {
     "github_repository": "canonical/kserve-operators",
-    "ref": "llmisvc-rewrite",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/lws-controller"
   },
   {
@@ -806,7 +806,7 @@
   },
   {
     "github_repository": "canonical/kserve-operators",
-    "ref": "llmisvc-rewrite",
+    "ref": "main",
     "relative_path_to_charmcraft_yaml": "charms/llm-integrator"
   },
   {
