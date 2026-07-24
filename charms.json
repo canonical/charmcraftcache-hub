@@ -822,7 +822,7 @@
   {
     "github_repository": "canonical/opensearch-operator",
     "ref": "2/edge",
-    "relative_path_to_charmcraft_yaml": "machines"
+    "relative_path_to_charmcraft_yaml": "machine"
   },
   {
     "github_repository": "canonical/opensearch-operator",
