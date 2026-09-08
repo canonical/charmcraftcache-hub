@@ -39,7 +39,7 @@ jobs:
     name: ${{ matrix.charm.job_name }}
     needs:
       - collect-charms
-    uses: ./.github/workflows/build_charm.yaml
+    uses: $/.github/workflows/build_charm.yaml
     with:
       github_repository: ${{ matrix.charm.github_repository }}
       ref: ${{ matrix.charm.ref }}
