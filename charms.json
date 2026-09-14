@@ -798,5 +798,10 @@
     "github_repository": "canonical/wazuh-indexer-operator",
     "ref": "2/edge",
     "relative_path_to_charmcraft_yaml": "."
+  },
+  {
+    "github_repository": "canonical/kserve-operators",
+    "ref": "KF-9013-implement-keda-charm",
+    "relative_path_to_charmcraft_yaml": "charms/keda-controller"
   }
 ]
