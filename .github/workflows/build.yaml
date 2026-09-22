@@ -30,6 +30,7 @@ jobs:
     outputs:
       charms: ${{ steps.collect.outputs.charms }}
     permissions: {}
+    cache-mode: none
 
   build:
     strategy:
@@ -46,6 +47,7 @@ jobs:
       relative_path_to_charmcraft_yaml: ${{ matrix.charm.relative_path_to_charmcraft_yaml }}
       charm_index: ${{ matrix.charm.charm_index }}
     permissions: {}
+    cache-mode: none
 
   release:
     name: Release wheels
@@ -73,3 +75,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write  # Needed to create release
+    cache-mode: none

@@ -16,3 +16,4 @@ jobs:
     uses: canonical/data-platform-workflows/.github/workflows/lint_workflows.yaml@v53.0.0
     permissions:
       contents: read
+    cache-mode: none
