@@ -803,5 +803,10 @@
     "github_repository": "canonical/jwt-integrator",
     "ref": "feat/arm-support",
     "relative_path_to_charmcraft_yaml": "tests/integration/requirer-charm"
+  },
+  {
+    "github_repository": "canonical/jwt-integrator",
+    "ref": "feat/arm-support",
+    "relative_path_to_charmcraft_yaml": "."
   }
 ]
