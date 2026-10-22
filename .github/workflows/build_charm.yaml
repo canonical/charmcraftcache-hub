@@ -86,7 +86,6 @@ jobs:
           sudo iptables -P FORWARD ACCEPT
 
           sudo snap install charmcraft --classic --channel latest/candidate
-          pipx install poetry charmcraftlocal
       - run: snap list
       - name: Build charm
         run: sudo --user "$USER" --preserve-env --preserve-env=PATH -- env -- build --github-repository="${VAR_GITHUB_REPOSITORY}" --ref="${VAR_REF}" --relative-path-to-charmcraft-yaml="${VAR_PATH_TO_CHARMCRAFT_YAML}" --platform="${VAR_PLATFORM}"
@@ -95,6 +94,7 @@ jobs:
           VAR_REF: ${{ inputs.ref }}
           VAR_PATH_TO_CHARMCRAFT_YAML: ${{ inputs.relative_path_to_charmcraft_yaml }}
           VAR_PLATFORM: ${{ matrix.platform.name }}
+          CHARMCRAFT_EXPERIMENTAL_MONOREPO: 1
       - name: Upload wheels in charmcraft cache directory
         uses: actions/upload-artifact@v7
         with:
