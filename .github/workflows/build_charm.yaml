@@ -85,8 +85,8 @@ jobs:
           sudo iptables -F FORWARD
           sudo iptables -P FORWARD ACCEPT
 
-          sudo snap install charmcraft --classic
-          pipx install poetry charmcraftlocal
+          # TODO: switch to latest/stable after 4.5.0 released to stable
+          sudo snap install charmcraft --classic --channel latest/candidate
       - run: snap list
       - name: Build charm
         run: sudo --user "$USER" --preserve-env --preserve-env=PATH -- env -- build --github-repository="${VAR_GITHUB_REPOSITORY}" --ref="${VAR_REF}" --relative-path-to-charmcraft-yaml="${VAR_PATH_TO_CHARMCRAFT_YAML}" --platform="${VAR_PLATFORM}"
@@ -95,6 +95,8 @@ jobs:
           VAR_REF: ${{ inputs.ref }}
           VAR_PATH_TO_CHARMCRAFT_YAML: ${{ inputs.relative_path_to_charmcraft_yaml }}
           VAR_PLATFORM: ${{ matrix.platform.name }}
+          # https://canonical.com/juju/docs/charmcraft/latest/howto/pack-a-charm-in-a-monorepo/
+          CHARMCRAFT_EXPERIMENTAL_MONOREPO: 1
       - name: Upload wheels in charmcraft cache directory
         uses: actions/upload-artifact@v7
         with:
