@@ -85,8 +85,7 @@ jobs:
           sudo iptables -F FORWARD
           sudo iptables -P FORWARD ACCEPT
 
-          # TODO: switch to latest/stable after 4.5.0 released to stable
-          sudo snap install charmcraft --classic --channel latest/candidate
+          sudo snap install charmcraft --classic
       - run: snap list
       - name: Build charm
         run: sudo --user "$USER" --preserve-env --preserve-env=PATH -- env -- build --github-repository="${VAR_GITHUB_REPOSITORY}" --ref="${VAR_REF}" --relative-path-to-charmcraft-yaml="${VAR_PATH_TO_CHARMCRAFT_YAML}" --platform="${VAR_PLATFORM}"
